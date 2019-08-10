@@ -1,0 +1,10 @@
+<div id="profile_social">
+    <h6>My Social Profiles</h6>
+    <a *ngFor="let entry of sites | keyvalue" href="{{entry.value}}"><i class="fa fa-{{entry.key}}"></i></a>
+    <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa fa-dribbble"></i></a> -->
+    <!-- <a href="#"><i class="fa fa-foursquare"></i></a> -->
+    <div class="clear"></div>
+</div>
