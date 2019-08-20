@@ -11,7 +11,7 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'BinaryAlchemist';
+  title = 'Binary Alchemist';
   protected animationStyle = 'bounceIn';
 
   constructor(private router: Router) {
@@ -22,7 +22,7 @@ export class AppComponent {
       });
   }
   public isProduction() {
-    return window.location.hostname === 'binaryalchemist.com';
+    return window.location.hostname === 'localhost';
   }
   protected loadContent() {
     $('.resp-tabs-container').addClass('animated ' + this.animationStyle);
