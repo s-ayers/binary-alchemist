@@ -8,14 +8,14 @@ declare var $: any;
   styleUrls: ['./page.component.css']
 })
 export class PageComponent {
-  protected animation_style = 'bounceIn';
+  protected animationStyle = 'bounceIn';
   // ngOnInit() {
-  //   $('.resp-tabs-container').addClass('animated ' + this.animation_style);
+  //   $('.resp-tabs-container').addClass('animated ' + this.animationStyle);
   //   $('.resp-tabs-container').one(
   //     'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
   //     function() {
   //       $('.resp-tabs-container').removeClass(
-  //         'animated ' + this.animation_style
+  //         'animated ' + this.animationStyle
   //       );
   //     }
   //   );
