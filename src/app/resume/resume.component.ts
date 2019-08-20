@@ -6,4 +6,4 @@ import { PageComponent } from '../components/page/page.component';
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent extends PageComponent {}
+export class ResumeComponent {}

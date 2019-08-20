@@ -67,14 +67,14 @@ export class AppComponent {
     /* --------------------------- Scroll tabs ------------------------------ */
     /* ---------------------------------------------------------------------- */
 
-    $('.content_2').mCustomScrollbar({
-      theme: 'dark-2',
-      contentTouchScroll: true,
-      advanced: {
-        updateOnContentResize: true,
-        updateOnBrowserResize: true,
-        autoScrollOnFocus: false
-      }
-    });
+    // $('.content_2').mCustomScrollbar({
+    //   theme: 'dark-2',
+    //   contentTouchScroll: true,
+    //   advanced: {
+    //     updateOnContentResize: true,
+    //     updateOnBrowserResize: true,
+    //     autoScrollOnFocus: false
+    //   }
+    // });
   }
 }

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { ResumeComponent } from './resume/resume.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -16,6 +16,10 @@ import { SocialMediaComponent } from './components/social-media/social-media.com
 import { MenuComponent } from './components/menu/menu.component';
 import { BlogComponent } from './blog/blog.component';
 import { PageComponent } from './components/page/page.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { AwardsComponent } from './components/awards/awards.component';
+import { ReferenceComponent } from './components/reference/reference.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,12 @@ import { PageComponent } from './components/page/page.component';
     SocialMediaComponent,
     MenuComponent,
     BlogComponent,
-    PageComponent
+    PageComponent,
+    ExperienceComponent,
+    EducationComponent,
+    AwardsComponent,
+    ReferenceComponent,
+    EscapeHtmlPipe
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
