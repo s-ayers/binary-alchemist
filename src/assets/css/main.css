@@ -82,20 +82,7 @@ h1 {
     padding: 0;
     margin: 0;
 }
-.resp-tabs-container h1 {
-    font-size: 26px;
-    color: #999;
-    text-transform: inherit;
-    margin-top: 0;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    border-bottom: 1px solid #e6e6e6;
-}
 
-.resp-tabs-container h1:not(.h-bloc) {
-    background: none;
-}
 
 a {
     text-decoration: none !important;
@@ -171,7 +158,7 @@ h2.resp-accordion {
 .resp-tab-active {
     border-bottom: none;
     margin-bottom: -1px !important;
-    padding: 12px 14px 14px 14px !important;
+    /* padding: 12px 14px 14px 14px !important; */
 }
 .resp-tab-active {
     border-bottom: none;
@@ -269,15 +256,6 @@ h2.resp-tab-active span.resp-arrow {
 /*---------Accordion styles----------*/
 /*-----------------------------------*/
 
-.resp-easy-accordion h2.resp-accordion {
-    display: block;
-}
-.resp-easy-accordion .resp-tab-content {
-    border: 1px solid #c1c1c1;
-}
-.resp-easy-accordion .resp-tab-content:last-child {
-    border-bottom: 1px solid #c1c1c1 !important;
-}
 .resp-jfit {
     width: 100%;
     margin: 0;
@@ -2954,7 +2932,7 @@ li h6{
 }
 
 #print,
-#downlowd {
+#download {
     display: block;
     padding: 17px !important;
     margin: 0;
@@ -2984,12 +2962,12 @@ li h6{
 }
 
 #print,
-#downlowd { 
+#download { 
     background: rgba(45, 57, 63, 0.8);
 }
 
 #print:hover,
-#downlowd:hover { 
+#download:hover { 
     background: rgba(45, 57, 63, 1);
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;

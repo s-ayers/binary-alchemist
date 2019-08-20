@@ -1,24 +1,42 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { LocationStrategy, HashLocationStrategy } from "@angular/common";
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
-import { HomeComponent } from "./home/home.component";
-import { ResumeComponent } from './components/resume/resume.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { BlogComponent } from './blog/blog.component';
+import { PageComponent } from './components/page/page.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ResumeComponent, ProfileComponent, GalleryComponent, PortfolioComponent, ContactComponent, ToolbarComponent, HeaderComponent, SocialMediaComponent],
+  declarations: [
+    AppComponent,
+    ResumeComponent,
+    ProfileComponent,
+    PortfolioComponent,
+    ContactComponent,
+    HeaderComponent,
+    SocialMediaComponent,
+    MenuComponent,
+    BlogComponent,
+    PageComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    // Add an icon to the library for convenient access in other components
+    // library.add(faCoffee);
+  }
+}

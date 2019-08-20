@@ -1,0 +1,10 @@
+.inner-social-div {
+  margin: auto;
+  width: 80%;
+
+  text-align: center;
+}
+
+.inner-social-div > a {
+  text-align: center;
+}
