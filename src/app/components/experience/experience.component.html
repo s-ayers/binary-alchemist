@@ -1,0 +1,27 @@
+<div *ngIf="experience">
+    <div class="title_content" style="margin-bottom:5px">
+        <div class="text_content">Experience</div>
+        <div class="clear"></div>
+    </div>
+    <!-- /.title_content -->
+
+    <!-- .attributes -->
+    <ul class="attributes">
+        <li *ngFor="let job of experience; let i = index" [class.first]="i===0">
+            <h5>{{job.title}} <span class="duration">
+                    <i class="fa fa-calendar color"></i> {{job.start}} -
+                    {{job.stop || 'Present'}}</span></h5>
+            <h6><span class="fa fa-briefcase"></span> {{job.company}}
+            </h6>
+            <div [innerHTML]="job.description | keepHtml"></div>
+        </li>
+        <!-- <li>
+            <h5>Front-End Developer <span class="duration"><i class="fa fa-calendar color"></i> 2010 -
+                    2011</span></h5>
+            <h6><span class="fa fa-briefcase"></span> Name of Company
+            </h6>
+
+        </li> -->
+
+    </ul>
+</div>

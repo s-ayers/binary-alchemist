@@ -8,5 +8,20 @@
     "stack-overflow": "https://stackoverflow.com/users/1877173/binary-alchemist",
     "linkedin": "https://www.linkedin.com/comm/in/steve-ayers-22933850",
     "windows": "https://dev.azure.com/steveneayers/steveneayers"
-  }
+  },
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Jack Henry & Associates",
+      "start": "2015",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Addision Group LLC",
+      "start": "2013",
+      "stop": "2015",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>"
+    }
+  ]
 }
