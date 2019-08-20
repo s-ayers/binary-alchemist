@@ -1,0 +1,36 @@
+<ul class="resp-tabs-list">
+    <li class="active">
+        <a [routerLink]="['/profile']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
+            <i [routerLinkActive]="['active']" class="fa fa-user"></i>
+        </a>
+    </li>
+
+    <li [routerLinkActive]="['active']">
+        <a [routerLink]="['/resume']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
+            <i [routerLinkActive]="['active']" class="fa fa-tasks"></i>
+        </a>
+    </li>
+
+    <li [routerLinkActive]="['active']">
+        <a [routerLink]="['/portfolio']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
+            <i [routerLinkActive]="['active']" class="fa fa-briefcase"></i>
+        </a>
+    </li>
+
+    <li [routerLinkActive]="['active']">
+        <a [routerLink]="['/blog']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
+            <i [routerLinkActive]="['active']" class="fa fa-bullhorn"></i>
+        </a>
+    </li>
+
+    <li style="margin-bottom: 48px !important;">
+        <a [routerLink]="['/contact']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
+            <i [routerLinkActive]="['active']" class="fa fa-envelope"></i>
+        </a>
+    </li>
+
+    <a href="#" id="print"><i [routerLinkActive]="['active']" class="fa fa-print icon_print resp-vtabs"></i> </a>
+    <a href="#" id="download"><i [routerLinkActive]="['active']" class="fa fa-download icon_print resp-vtabs"></i>
+    </a>
+
+</ul>

@@ -1,10 +1,12 @@
 {
   "name": "Steven Ayers",
   "location": "Elwood, IL",
-  "title": "WEB & SOFTWARE DESIGNER",
+  "title": "SOFTWARE DESIGNER & PROPERTY MANAGER",
+  "website": "https://binaryalchemist.com",
   "social media": {
     "github": "https://github.com/s-ayers/",
     "stack-overflow": "https://stackoverflow.com/users/1877173/binary-alchemist",
-    "linkedin-in": "https://www.linkedin.com/comm/in/steve-ayers-22933850"
+    "linkedin": "https://www.linkedin.com/comm/in/steve-ayers-22933850",
+    "windows": "https://dev.azure.com/steveneayers/steveneayers"
   }
 }
