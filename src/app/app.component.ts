@@ -12,7 +12,7 @@ declare var $: any;
 })
 export class AppComponent {
   title = 'BinaryAlchemist';
-  protected animation_style = 'bounceIn';
+  protected animationStyle = 'bounceIn';
 
   constructor(private router: Router) {
     router.events
@@ -21,14 +21,16 @@ export class AppComponent {
         this.loadContent();
       });
   }
-
+  public isProduction() {
+    return window.location.hostname === 'binaryalchemist.com';
+  }
   protected loadContent() {
-    $('.resp-tabs-container').addClass('animated ' + this.animation_style);
+    $('.resp-tabs-container').addClass('animated ' + this.animationStyle);
     $('.resp-tabs-container').one(
       'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
       function() {
         $('.resp-tabs-container').removeClass(
-          'animated ' + this.animation_style
+          'animated ' + this.animationStyle
         );
       }
     );

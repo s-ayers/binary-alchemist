@@ -15,8 +15,8 @@ export class PortfolioComponent extends PageComponent implements AfterViewInit {
     /* ----------------------------- Portfolio ------------------------------ */
     /* ---------------------------------------------------------------------- */
 
-    var filterList = {
-      init: function() {
+    const filterList = {
+      init: () => {
         // MixItUp plugin
         // http://mixitup.io
         $('#portfoliolist').mixitup({
@@ -28,10 +28,10 @@ export class PortfolioComponent extends PageComponent implements AfterViewInit {
           onMixEnd: filterList.hoverEffect()
         });
       },
-      hoverEffect: function() {
+      hoverEffect: () => {
         // Simple parallax effect
         $('#portfoliolist .portfolio').hover(
-          function() {
+          () => {
             $(this)
               .find('.label')
               .stop()
