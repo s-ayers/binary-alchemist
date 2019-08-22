@@ -9,21 +9,20 @@
 
         <!-- #filters -->
         <ul id="filters" class="clearfix">
-            <li><span class="filter active" data-filter="catWeb catGraphic catMotion logo">All</span>
+            <li>
+                <span class="filter active" [attr.data-filter]="categories.join(' ')">All</span>
             </li>
-            <li><span class="filter" data-filter="catWeb">Web Design</span></li>
-            <li><span class="filter" data-filter="catGraphic">Graphic
-                    Design</span></li>
-            <li><span class="filter" data-filter="catMotion">Motion
-                    Graphic</span></li>
-            <li><span class="filter" data-filter="logo">Logo</span></li>
+            <li *ngFor="let category of categories">
+                <span class="filter" [attr.data-filter]="category">{{category}}</span>
+            </li>
         </ul>
         <!-- /#filters -->
 
         <!-- #portfoliolist -->
         <div id="portfoliolist">
 
-
+            <app-projects *ngFor="let project of projects" [project]="project"></app-projects>
+            <!-- 
             <div class="view view-first portfolio logo" data-cat="logo">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
@@ -38,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catWeb" data-cat="catWeb">
+            <div class="view view-first portfolio website" data-cat="website">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -53,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catWeb" data-cat="catWeb">
+            <div class="view view-first portfolio website" data-cat="website">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -63,14 +62,31 @@
                     <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
                         <i class="fa fa-search"></i>
                     </a>
-                    <a href="http://themeforest.net/item/flexyvcard-responsive-vcard-template-/7158750?WT.ac=solid_search_thumb&amp;WT.seg_1=solid_search_thumb&amp;WT.z_author=flexycodes?width=800&amp;height=500&amp;iframe=true"
-                        rel="portfolio" class="info external">
+                    <a href="https://dancebeat.studio?width=800&amp;height=500&amp;iframe=true" rel="portfolio"
+                        class="info external">
                         <i class="fa fa-link"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="view view-first portfolio catMotion" data-cat="catMotion">
+            <div class="view view-first portfolio website" data-cat="website">
+                <img src="http://placehold.it/220x165" />
+                <div class="mask">
+                    <h2>Project Name</h2>
+                    <p>A wonderful serenity has taken possession of my entire
+                        soul.</p>
+
+                    <a href="http://placehold.it/600x849" rel="portfolio" class="info open-imag">
+                        <i class="fa fa-search"></i>
+                    </a>
+                    <a href="https://binaryalchemist.com?width=800&amp;height=500&amp;iframe=true" rel="portfolio"
+                        class="info external">
+                        <i class="fa fa-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="view view-first portfolio motion" data-cat="motion">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -85,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catWeb" data-cat="catWeb">
+            <div class="view view-first portfolio website" data-cat="website">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -100,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catMotion" data-cat="catMotion">
+            <div class="view view-first portfolio motion" data-cat="motion">
 
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
@@ -116,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
+            <div class="view view-first portfolio graphic" data-cat="graphic">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -146,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catWeb" data-cat="catWeb">
+            <div class="view view-first portfolio website" data-cat="website">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -161,7 +177,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
+            <div class="view view-first portfolio graphic" data-cat="graphic">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -206,7 +222,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
+            <div class="view view-first portfolio graphic" data-cat="graphic">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -236,7 +252,7 @@
                 </div>
             </div>
 
-            <div class="view view-first portfolio catGraphic" data-cat="catGraphic">
+            <div class="view view-first portfolio graphic" data-cat="graphic">
                 <img src="http://placehold.it/220x165" />
                 <div class="mask">
                     <h2>Project Name</h2>
@@ -249,7 +265,7 @@
                     <a href="http://themeforest.net/user/flexycodes" target="_blank" class="info external"><i
                             class="fa fa-link"></i></a>
                 </div>
-            </div>
+            </div> -->
 
 
             <div class="clear"></div>

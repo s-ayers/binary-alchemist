@@ -20,6 +20,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { EducationComponent } from './components/education/education.component';
 import { AwardsComponent } from './components/awards/awards.component';
 import { ReferenceComponent } from './components/reference/reference.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectWebsiteComponent } from './components/projects/project-website/project-website.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ReferenceComponent } from './components/reference/reference.component';
     EducationComponent,
     AwardsComponent,
     ReferenceComponent,
-    EscapeHtmlPipe
+    EscapeHtmlPipe,
+    ProjectsComponent,
+    ProjectWebsiteComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
