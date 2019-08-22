@@ -1,14 +1,27 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
-
+import * as projects from './projects.json';
 declare var $: any;
-
+declare var require: any;
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent extends PageComponent implements AfterViewInit {
+  categories: string[] = [];
+  projects: any[] = require('./projects.json');
+  constructor() {
+    super();
+    this.projects.forEach(project => {
+      if (this.categories.indexOf(project.category) === -1) {
+        this.categories.push(project.category);
+      }
+    });
+
+    this.categories.sort();
+    console.log(this.categories);
+  }
   ngAfterViewInit() {
     // super.ngOnInit();
     /* ---------------------------------------------------------------------- */

@@ -1,0 +1,6 @@
+ul#filters > li {
+  text-transform: lowercase;
+}
+ul#filters > li::first-letter {
+  text-transform: uppercase;
+}
