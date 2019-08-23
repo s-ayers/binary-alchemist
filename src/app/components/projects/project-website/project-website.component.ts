@@ -14,8 +14,9 @@ export class ProjectWebsiteComponent implements OnInit {
   ngOnInit() {
     if (this.project.thumbnail) {
       this.project.thumbnail = require('../' + this.project.thumbnail);
-    } else {
-      this.project.thumbnail = '/assets/images/220x165.png';
     }
+    // else {
+    //   this.project.thumbnail = 'assets/images/220x165.png';
+    // }
   }
 }

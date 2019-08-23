@@ -43,6 +43,13 @@
       "start": "2008",
       "stop": "2010",
       "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>"
+    },
+    {
+      "title": "Supervisor",
+      "company": "Support Techs LLC",
+      "start": "2007",
+      "stop": "2008",
+      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>"
     }
   ]
 }
