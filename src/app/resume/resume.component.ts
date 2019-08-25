@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
 
 @Component({
@@ -6,4 +6,4 @@ import { PageComponent } from '../components/page/page.component';
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent {}
+export class ResumeComponent extends PageComponent {}

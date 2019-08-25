@@ -6,3 +6,8 @@ h1.h-bloc {
   padding-bottom: 10px !important;
   padding-left: 30px !important;
 }
+
+.mCSB_draggerRail,
+.mCSB_dragger_bar {
+  width: 16px !important;
+}
