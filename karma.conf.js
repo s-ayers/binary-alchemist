@@ -4,6 +4,7 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
+    files: ["node_modules/jquery/dist/jquery.min.js", "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"],
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),

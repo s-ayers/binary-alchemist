@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
+import { SocialMediaComponent } from '../social-media/social-media.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -8,9 +9,8 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeaderComponent ]
-    })
-    .compileComponents();
+      declarations: [HeaderComponent, SocialMediaComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
