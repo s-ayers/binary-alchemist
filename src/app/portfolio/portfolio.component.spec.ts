@@ -4,9 +4,7 @@ import { EscapeHtmlPipe } from '../pipes/keep-html.pipe';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { PortfolioComponent } from './portfolio.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
-import { ProjectWebsiteComponent } from '../components/projects/project-website/project-website.component';
-import * as projects from '../components/projects/projects.json';
-import { Project } from '../components/projects/project.model';
+import { Projects } from '../components/projects/projects.data';
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -14,12 +12,7 @@ describe('PortfolioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        PortfolioComponent,
-        ProjectsComponent,
-        ProjectWebsiteComponent,
-        EscapeHtmlPipe
-      ],
+      declarations: [PortfolioComponent, ProjectsComponent, EscapeHtmlPipe],
       providers: [MalihuScrollbarService]
     }).compileComponents();
   }));
@@ -27,7 +20,7 @@ describe('PortfolioComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(PortfolioComponent);
     component = fixture.componentInstance;
-    component.projects = projects as Project[];
+    component.projects = Projects;
     fixture.detectChanges();
   });
 

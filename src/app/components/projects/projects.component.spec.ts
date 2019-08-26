@@ -3,8 +3,7 @@ import { EscapeHtmlPipe } from '../../pipes/keep-html.pipe';
 
 import { ProjectsComponent } from './projects.component';
 import { Project } from './project.model';
-import { ProjectWebsiteComponent } from './project-website/project-website.component';
-import * as projects from './projects.json';
+import { Projects } from './projects.data';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -12,12 +11,12 @@ describe('ProjectsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ProjectsComponent, ProjectWebsiteComponent, EscapeHtmlPipe]
+      declarations: [ProjectsComponent, EscapeHtmlPipe]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    const project = projects[0] as Project;
+    const project = Projects[0];
     // console.log(project);
     project.thumbnail = ''; ///require(project.thumbnail);
     fixture = TestBed.createComponent(ProjectsComponent);
