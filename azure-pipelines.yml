@@ -28,7 +28,8 @@ steps:
   - task: Npm@1
     displayName: 'npm test'
     inputs:
-      command: run test
+      command: custom
+      customCommand: run test
       workingDir: src/
 
   - task: Npm@1
