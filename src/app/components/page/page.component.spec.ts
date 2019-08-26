@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import jQuery from 'jquery';
 import { PageComponent } from './page.component';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 describe('PageComponent', () => {
   let component: PageComponent;
@@ -8,9 +9,10 @@ describe('PageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageComponent ]
-    })
-    .compileComponents();
+      declarations: [PageComponent],
+      // imports: [MalihuScrollbarService]
+      providers: [MalihuScrollbarService]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

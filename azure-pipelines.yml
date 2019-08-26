@@ -17,8 +17,23 @@ steps:
 
   - script: |
       npm install -g @angular/cli
-      npm install
-      npm run lint
-      npm run test-headless
-      npm run build
-    displayName: 'npm install and build'
+    displayName: 'install angular-cli'
+
+  - task: Npm@1
+    displayName: 'npm install'
+    inputs:
+      command: install
+      workingDir: src/
+
+  - task: Npm@1
+    displayName: 'npm test'
+    inputs:
+      command: test
+      workingDir: src/
+
+  - task: Npm@1
+    displayName: 'npm build'
+    inputs:
+      command: custom
+      customCommand: run build
+      workingDir: src/
