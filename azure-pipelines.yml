@@ -31,6 +31,15 @@ steps:
       command: test
       workingDir: src/
 
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage Angular results'
+    condition: succeededOrFailed()
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: 'src/angular7/coverage/cobertura-coverage.xml'
+      reportDirectory: coverage
+      failIfCoverageEmpty: true
+
   - task: Npm@1
     displayName: 'npm build'
     inputs:
