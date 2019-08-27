@@ -32,6 +32,15 @@ steps:
       customCommand: run test
       workingDir: src/
 
+  - task: PublishTestResults@2
+    displayName: 'Publish Angular test results'
+    condition: succeededOrFailed()
+    inputs:
+      searchFolder: $(System.DefaultWorkingDirectory)/
+      testRunTitle: Angular
+      testResultsFormat: JUnit
+      testResultsFiles: '**/TESTS*.xml'
+
   - task: PublishCodeCoverageResults@1
     displayName: 'Publish code coverage Angular results'
     condition: succeededOrFailed()
