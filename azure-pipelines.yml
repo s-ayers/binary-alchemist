@@ -36,7 +36,11 @@ steps:
     displayName: 'Publish Angular test results'
     condition: succeededOrFailed()
     inputs:
+<<<<<<< HEAD
+      searchFolder: coverage/junit
+=======
       searchFolder: ./
+>>>>>>> master
       testRunTitle: Angular
       testResultsFormat: JUnit
       testResultsFiles: '**/TESTS*.xml'
@@ -46,7 +50,7 @@ steps:
     condition: succeededOrFailed()
     inputs:
       codeCoverageTool: Cobertura
-      summaryFileLocation: 'src/angular7/coverage/cobertura-coverage.xml'
+      summaryFileLocation: 'coverage/cobertura-coverage.xml'
       reportDirectory: coverage
       failIfCoverageEmpty: true
 
