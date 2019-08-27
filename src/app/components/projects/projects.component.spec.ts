@@ -17,8 +17,6 @@ describe('ProjectsComponent', () => {
 
   beforeEach(() => {
     const project = Projects[0];
-    // console.log(project);
-    project.thumbnail = ''; ///require(project.thumbnail);
     fixture = TestBed.createComponent(ProjectsComponent);
     component = fixture.componentInstance;
     component.project = project;
