@@ -17,7 +17,7 @@ export class MenuComponent {
     });
   }
   active(path: string, tag: string = 'i') {
-    if (this.url === path) {
+    if (this.url === path || (this.url === '/' && path === '/profile')) {
       if (tag !== 'li') {
         return ' icon_menu_active';
       }
