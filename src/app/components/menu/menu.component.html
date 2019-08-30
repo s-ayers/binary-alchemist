@@ -1,36 +1,36 @@
 <ul class="resp-tabs-list">
-    <li class="active">
-        <a [routerLink]="['/profile']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
-            <i [routerLinkActive]="['active']" class="fa fa-user"></i>
+    <li class="resp-tab-item  {{active('/profile', 'li')}}">
+        <a [routerLink]="['/profile']">
+            <i class="fa fa-user icon_menu {{active('/profile')}}"></i>
         </a>
     </li>
 
-    <li [routerLinkActive]="['active']">
-        <a [routerLink]="['/resume']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
-            <i [routerLinkActive]="['active']" class="fa fa-tasks"></i>
+    <li class="resp-tab-item {{active('/resume', 'li')}}">
+        <a [routerLink]="['/resume']">
+            <i class="fa fa-tasks icon_menu {{active('/resume')}}"></i>
         </a>
     </li>
 
-    <li [routerLinkActive]="['active']">
-        <a [routerLink]="['/portfolio']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
-            <i [routerLinkActive]="['active']" class="fa fa-briefcase"></i>
+    <li class="resp-tab-item {{active('/portfolio', 'li')}}">
+        <a [routerLink]="['/portfolio']">
+            <i class="fa fa-briefcase icon_menu {{active('/portfolio')}}"></i>
         </a>
     </li>
 
-    <li [routerLinkActive]="['active']">
-        <a [routerLink]="['/blog']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
-            <i [routerLinkActive]="['active']" class="fa fa-bullhorn"></i>
+    <li class="resp-tab-item {{active('/blog', 'li')}}">
+        <a [routerLink]="['/blog']">
+            <i class="fa fa-bullhorn icon_menu {{active('/blog')}}"></i>
         </a>
     </li>
 
-    <li style="margin-bottom: 48px !important;">
-        <a [routerLink]="['/contact']" class="icon_menu resp-tab-item" [routerLinkActive]="['active']">
-            <i [routerLinkActive]="['active']" class="fa fa-envelope"></i>
+    <li class="resp-tab-item {{active('/contact', 'li')}}" style="margin-bottom: 48px !important;">
+        <a [routerLink]="['/contact']">
+            <i class="fa fa-envelope icon_menu {{active('/contact')}}"></i>
         </a>
     </li>
 
-    <a href="#" id="print"><i [routerLinkActive]="['active']" class="fa fa-print icon_print resp-vtabs"></i> </a>
-    <a href="#" id="download"><i [routerLinkActive]="['active']" class="fa fa-download icon_print resp-vtabs"></i>
+    <a href="#" id="print"><i class="fa fa-print icon_print resp-vtabs"></i> </a>
+    <a href="#" id="download"><i class="fa fa-download icon_print resp-vtabs"></i>
     </a>
 
 </ul>
