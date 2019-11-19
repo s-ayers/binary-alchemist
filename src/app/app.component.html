@@ -66,7 +66,7 @@
 
   /* The images need to re-initialize on load and on resize, or else the areas
    * where each image is displayed will be wrong. */
-  $(window).load(init);
+  $(window).on('load', init);
   $(window).resize(init);
 
   /* Setting the mousemove event caller */
