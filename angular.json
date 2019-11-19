@@ -38,8 +38,7 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/bootstrap.min.js",
-              "src/assets/js/jquery.cycle2.min.js",
+              "node_modules/jquery.cycle2/src/jquery.cycle2.min.js",
               "node_modules/mixitup/dist/mixitup.min.js",
               "src/assets/js/HeadImage.js",
               "src/assets/js/easyResponsiveTabs.js",
