@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BlogComponent } from './blog.component';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 describe('BlogComponent', () => {
   let component: BlogComponent;
@@ -8,9 +9,9 @@ describe('BlogComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlogComponent ]
-    })
-    .compileComponents();
+      declarations: [BlogComponent],
+      providers: [MalihuScrollbarService]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

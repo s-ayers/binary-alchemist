@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { EscapeHtmlPipe } from './pipes/keep-html.pipe';
 import { ResumeComponent } from './resume/resume.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -21,7 +21,7 @@ import { EducationComponent } from './components/education/education.component';
 import { AwardsComponent } from './components/awards/awards.component';
 import { ReferenceComponent } from './components/reference/reference.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ProjectWebsiteComponent } from './components/projects/project-website/project-website.component';
+import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 
 @NgModule({
   declarations: [
@@ -40,10 +40,15 @@ import { ProjectWebsiteComponent } from './components/projects/project-website/p
     AwardsComponent,
     ReferenceComponent,
     EscapeHtmlPipe,
-    ProjectsComponent,
-    ProjectWebsiteComponent
+    ProjectsComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    NgbModule,
+    MalihuScrollbarModule.forRoot()
+  ],
   providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })

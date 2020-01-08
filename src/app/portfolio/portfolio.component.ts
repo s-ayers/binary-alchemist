@@ -1,18 +1,22 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import mixitup from 'mixitup';
+
 import { PageComponent } from '../components/page/page.component';
-import * as projects from './projects.json';
-declare var $: any;
-declare var require: any;
+import { Project } from '../components/projects/project.model';
+import { Projects } from '../components/projects/projects.data';
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
+  providers: [MalihuScrollbarService]
 })
 export class PortfolioComponent extends PageComponent implements AfterViewInit {
   categories: string[] = [];
-  projects: any[] = require('./projects.json');
-  constructor() {
-    super();
+  projects: Project[] = Projects;
+  constructor(mScrollbarService: MalihuScrollbarService) {
+    super(mScrollbarService);
     this.projects.forEach(project => {
       if (this.categories.indexOf(project.category) === -1) {
         this.categories.push(project.category);
@@ -20,25 +24,23 @@ export class PortfolioComponent extends PageComponent implements AfterViewInit {
     });
 
     this.categories.sort();
-    console.log(this.categories);
   }
   ngAfterViewInit() {
-    // super.ngOnInit();
+    super.ngAfterViewInit();
     /* ---------------------------------------------------------------------- */
     /* ----------------------------- Portfolio ------------------------------ */
     /* ---------------------------------------------------------------------- */
-
     const filterList = {
       init: () => {
         // MixItUp plugin
         // http://mixitup.io
-        $('#portfoliolist').mixitup({
-          targetSelector: '.portfolio',
-          filterSelector: '.filter',
-          effects: ['fade'],
-          easing: 'snap',
-          // call the hover effect
-          onMixEnd: filterList.hoverEffect()
+        mixitup('#portfoliolist', {
+          // targetSelector: '.portfolio',
+          // filterSelector: '.filter',
+          // effects: ['fade'],
+          // easing: 'snap',
+          // // call the hover effect
+          // onMixEnd: filterList.hoverEffect()
         });
       },
       hoverEffect: () => {
@@ -67,7 +69,6 @@ export class PortfolioComponent extends PageComponent implements AfterViewInit {
         );
       }
     };
-
     // Run the show!
     filterList.init();
   }

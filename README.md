@@ -1,4 +1,6 @@
-# BinaryAlchemist
+# BinaryAlchemist.com
+
+[![Build Status](https://dev.azure.com/steveneayers/steveneayers/_apis/build/status/s-ayers.binary-alchemist?branchName=master)](https://dev.azure.com/steveneayers/steveneayers/_build/latest?definitionId=2&branchName=master)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 

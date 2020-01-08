@@ -16,7 +16,8 @@ a {
   color: #3b5998;
 }
 .icon_menu_active,
-.icon_menu_hover {
+.icon_menu_hover,
+.resp-tab-item:hover .icon_menu {
   background: #3b5998 !important;
   color: #fff !important;
   transition-property: background-color;
@@ -133,7 +134,8 @@ h2.resp-accordion:hover .hi-icon,
 }
 @media only screen and (max-width: 800px) {
   .icon_menu_active,
-  .icon_menu_hover {
+  .icon_menu_hover,
+  .resp-tab-item:hover .icon_menu {
     background: #fff !important;
     color: #3b5998 !important;
     transition-property: background-color;

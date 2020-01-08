@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
 	/* ---------------------------------------------------------------------- */
 
 	/*Page Preloading*/
-	$(window).load(function () {
+	$(window).on('load', function () {
 		$('#spinner').fadeOut(200);
 		$('#preloader').delay(200).fadeOut('slow');
 		$('.wrapper').fadeIn(200);

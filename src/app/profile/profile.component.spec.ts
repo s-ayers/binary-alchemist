@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProfileComponent } from './profile.component';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
 describe('ProfileComponent', () => {
   let component: ProfileComponent;
@@ -8,9 +9,9 @@ describe('ProfileComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfileComponent ]
-    })
-    .compileComponents();
+      declarations: [ProfileComponent],
+      providers: [MalihuScrollbarService]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
