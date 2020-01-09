@@ -22,6 +22,7 @@ import { AwardsComponent } from './components/awards/awards.component';
 import { ReferenceComponent } from './components/reference/reference.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
     AwardsComponent,
     ReferenceComponent,
     EscapeHtmlPipe,
-    ProjectsComponent
+    ProjectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,17 @@
 import { Component } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
+import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
-export class ResumeComponent extends PageComponent {}
+export class ResumeComponent extends PageComponent {
+  routestring = '/resume';
+
+  constructor(mScrollbarService: MalihuScrollbarService, location: Location) {
+    super(mScrollbarService, location);
+  }
+}

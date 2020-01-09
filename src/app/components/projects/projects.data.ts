@@ -32,7 +32,7 @@ export const Projects: Project[] = [
     website: 'https://github.com/s-ayers/OpenLotR2'
   },
   {
-    name: "Conway's Game of Life",
+    name: 'Conway\'s Game of Life',
     description: '<p>The Game of Life, is a cellular automaton.</p>',
     category: 'game',
     thumbnail: require('./220x165.png'),

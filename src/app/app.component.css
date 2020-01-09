@@ -10,3 +10,14 @@
     width: 89%;
   }
 }
+
+@media only screen and (max-width: 800px) {
+.resp-vtabs .resp-tabs-container {
+    border: none;
+    float: none;
+    width: 100%;
+    min-height: initial;
+    clear: none;
+    height: 100%;
+}
+}
