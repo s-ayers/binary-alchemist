@@ -1,5 +1,8 @@
-import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { Location } from '@angular/common';
+
+declare var $: any;
 
 @Component({
   selector: 'app-page',
@@ -8,7 +11,39 @@ import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
   providers: [MalihuScrollbarService]
 })
 export class PageComponent implements AfterViewInit, OnDestroy {
-  constructor(private mScrollbarService: MalihuScrollbarService) {}
+  routestring: string;
+  collapsed = false;
+  constructor(private mScrollbarService: MalihuScrollbarService, private location: Location) {
+
+  }
+
+  isActive() {
+    return this.location.path() === this.routestring;
+  }
+
+  toggle() {
+
+    if (!this.isActive()) {
+      this.collapsed = false;
+      this.go();
+    } else {
+      this.collapsed = !this.collapsed;
+    }
+    if (!this.collapsed) {
+      setTimeout(()=>{
+        $('html, body').animate({ scrollTop: $('h2.resp-accordion.resp-tab-active').offset().top - 50 }, 600);
+      });
+
+    } else {
+      $('html, body').animate({ scrollTop: 0 }, 600);
+
+    }
+  }
+
+  go() {
+    this.location.go(this.routestring);
+  }
+
   ngAfterViewInit() {
     this.mScrollbarService.initScrollbar('.content_2', {
       theme: 'dark-2',
@@ -19,6 +54,11 @@ export class PageComponent implements AfterViewInit, OnDestroy {
         autoScrollOnFocus: false
       }
     });
+    console.log(window.innerWidth);
+    if (window.innerWidth <= 800) {
+      $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 50 }, 600);
+
+    }
   }
   ngOnDestroy() {
     this.mScrollbarService.destroy('.content_2');

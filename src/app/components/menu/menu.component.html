@@ -1,31 +1,31 @@
 <ul class="resp-tabs-list">
-    <li class="resp-tab-item  {{active('/profile', 'li')}}">
-        <a [routerLink]="['/profile']">
-            <i class="fa fa-user icon_menu {{active('/profile')}}"></i>
+    <li (click)="go('/profile')" [class.resp-tab-active]="isActive('/profile')" class="resp-tab-item">
+        <a>
+            <i class="fa fa-user icon_menu" [class.icon_menu_active]="isActive('/profile')" ></i>
         </a>
     </li>
 
-    <li class="resp-tab-item {{active('/resume', 'li')}}">
-        <a [routerLink]="['/resume']">
-            <i class="fa fa-tasks icon_menu {{active('/resume')}}"></i>
+    <li (click)="go('/resume')" [class.resp-tab-active]="isActive('/resume')" class="resp-tab-item">
+        <a>
+            <i class="fa fa-tasks icon_menu" [class.icon_menu_active]="isActive('/resume')"></i>
         </a>
     </li>
 
-    <li class="resp-tab-item {{active('/portfolio', 'li')}}">
-        <a [routerLink]="['/portfolio']">
-            <i class="fa fa-briefcase icon_menu {{active('/portfolio')}}"></i>
+    <li (click)="go('/portfolio')" [class.resp-tab-active]="isActive('/portfolio')" class="resp-tab-item">
+        <a>
+            <i class="fa fa-briefcase icon_menu" [class.icon_menu_active]="isActive('/portfolio')"></i>
         </a>
     </li>
 
-    <li class="resp-tab-item {{active('/blog', 'li')}}">
+    <li (click)="go('/blog')" [class.resp-tab-active]="isActive('/blog')" class="resp-tab-item">
         <a [routerLink]="['/blog']">
-            <i class="fa fa-bullhorn icon_menu {{active('/blog')}}"></i>
+            <i class="fa fa-bullhorn icon_menu" [class.icon_menu_active]="isActive('/blog')"></i>
         </a>
     </li>
 
-    <li class="resp-tab-item {{active('/contact', 'li')}}" style="margin-bottom: 48px !important;">
+    <li (click)="go('/contact')" [class.resp-tab-active]="isActive('/contact')" class="resp-tab-item" style="margin-bottom: 48px !important;">
         <a [routerLink]="['/contact']">
-            <i class="fa fa-envelope icon_menu {{active('/contact')}}"></i>
+            <i class="fa fa-envelope icon_menu" [class.icon_menu_active]="isActive('/contact')"></i>
         </a>
     </li>
 

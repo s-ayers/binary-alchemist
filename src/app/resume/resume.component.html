@@ -1,5 +1,14 @@
 <!-- .resume -->
-<div id="resume" class="content_2">
+<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" [class.resp-tab-active]="isActive()" role="tab" aria-controls="tab_item-1" (click)="toggle()">
+    <i class="hi-icon fa fa-tasks icon_menu" [class.icon_menu_active]="isActive()"></i>
+    <span class="tite-list-resp"> 
+    resume
+    
+</span>
+<i class="glyphicon arrow-tabs" [class.glyphicon-chevron-down]="collapsed || !isActive()" [class.glyphicon-chevron-up]="!collapsed && isActive()"></i>
+</h2>
+
+<div id="resume" class="content_2" [hidden]="!isActive()||collapsed">
     <!-- .title -->
     <h1 class="h-bloc">Resume - Personal Info</h1>
 

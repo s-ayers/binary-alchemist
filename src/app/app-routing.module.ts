@@ -6,35 +6,36 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ProfileComponent
+    redirectTo: 'profile', pathMatch: 'full'
   },
   {
     path: 'resume',
-    component: ResumeComponent
+    component: HomeComponent
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: HomeComponent
   },
   {
     path: 'profile',
-    component: ProfileComponent
+    component: HomeComponent
   },
   {
     path: 'blog',
-    component: BlogComponent
+    component: HomeComponent
   },
   {
     path: 'contact',
-    component: ContactComponent
+    component: HomeComponent
   },
   {
     path: 'portfolio',
-    component: PortfolioComponent
+    component: HomeComponent
   }
 ];
 
