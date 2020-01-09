@@ -1,3 +1,6 @@
+# What is CSS?
+## What problem does it try to solve?
+
 
 
 CSS separates the appearance of a tag from its meaning. Schema.org provides additional ways of conveying meaning.  Html is about meaning, and css is about appearance.
