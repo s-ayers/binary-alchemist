@@ -31,7 +31,7 @@ export class PageComponent implements AfterViewInit, OnDestroy {
     }
     if (!this.collapsed) {
       setTimeout(()=>{
-        $('html, body').animate({ scrollTop: $('h2.resp-accordion.resp-tab-active').offset().top - 50 }, 600);
+        $('html, body').animate({ scrollTop: $('h2.resp-accordion.resp-tab-active').offset().top - 10 }, 600);
       });
 
     } else {
@@ -54,9 +54,8 @@ export class PageComponent implements AfterViewInit, OnDestroy {
         autoScrollOnFocus: false
       }
     });
-    console.log(window.innerWidth);
     if (window.innerWidth <= 800) {
-      $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 50 }, 600);
+      $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 10 }, 600);
 
     }
   }

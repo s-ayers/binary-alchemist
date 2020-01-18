@@ -1,10 +1,12 @@
 <!-- .blog -->
-<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" [class.resp-tab-active]="isActive()" role="tab" aria-controls="tab_item-3" (click)="toggle()">
+<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" [class.resp-tab-active]="isActive() && !collapsed"
+    role="tab" aria-controls="tab_item-3" (click)="toggle()">
     <i class="hi-icon fa fa-bullhorn icon_menu" [class.icon_menu_active]="isActive()"></i>
     <span class="tite-list-resp">
-    blog
-    
-</span><i class="glyphicon arrow-tabs" [class.glyphicon-chevron-down]="collapsed || !isActive()" [class.glyphicon-chevron-up]="!collapsed && isActive()"></i></h2>
+        blog
+
+    </span><i class="glyphicon arrow-tabs" [class.glyphicon-chevron-down]="collapsed || !isActive()"
+        [class.glyphicon-chevron-up]="!collapsed && isActive()"></i></h2>
 <div id="blog" class="content_2" [hidden]="!isActive()||collapsed">
     <h1 class="h-bloc">Blog - My Blog</h1><br>
 
