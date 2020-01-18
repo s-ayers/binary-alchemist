@@ -23,6 +23,7 @@ import { ReferenceComponent } from './components/reference/reference.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 import { HomeComponent } from './home/home.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HomeComponent } from './home/home.component';
     ReferenceComponent,
     EscapeHtmlPipe,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

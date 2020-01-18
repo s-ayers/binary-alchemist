@@ -29,8 +29,10 @@
     margin: -40px 0 0 -40px;
     background: url(../images/spinner.GIF) no-repeat;
 }
-#portfolio .mCSB_container { 
-    margin-right: 0 !important; 
+
+
+#portfolio .mCSB_container {
+    margin-right: 0 !important;
 }
 
 #custumize-style {
@@ -73,7 +75,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     width: 100%;
     overflow: hidden;
     position: absolute;
-    top: 50%; 
+    top: 50%;
     margin: -290.5px auto 0 auto;
 }
 h1 {
@@ -83,6 +85,20 @@ h1 {
     margin: 0;
 }
 
+.resp-tabs-container h1 {
+    font-size: 26px;
+    color: #999;
+    text-transform: inherit;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.resp-tabs-container h1:not(.h-bloc) {
+    background: none;
+}
 
 a {
     text-decoration: none !important;
@@ -145,7 +161,7 @@ h2.resp-accordion {
     margin: 0;
     list-style: none;
     cursor: pointer;
-    background: #303030; 
+    background: #303030;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     line-height: 0px;
     cursor: pointer;
@@ -210,7 +226,7 @@ h2.resp-tab-title:last-child {
     border-bottom: none;
 }
 
-.resp-vtabs .resp-tabs-container {	
+.resp-vtabs .resp-tabs-container {
     padding: 0;
     background-color: #f4f4f4;
     float: left;
@@ -435,7 +451,7 @@ h2.resp-accordion:hover {
 }
 .contact-info ul {
     float: left;
-    margin-left: 0px; 
+    margin-left: 0px;
 }
 .contact-info ul li {
     font-size: 13px;
@@ -532,7 +548,7 @@ h2.resp-accordion:hover {
     height: 580px;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
-    box-sizing:border-box;		
+    box-sizing:border-box;
 }
 
 /*--------------------------------------------------
@@ -696,14 +712,14 @@ h2.resp-accordion:hover {
    -ms-transition-delay: 0.2s;
    transition-delay: 0.2s;
 }
-				
-.container-portfolio { 
-    width: 100%; 
-    margin: 0 auto; 
+
+.container-portfolio {
+    width: 100%;
+    margin: 0 auto;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
-    transition: all 1s ease;	
+    transition: all 1s ease;
 }
 
 #filters {
@@ -721,7 +737,7 @@ h2.resp-accordion:hover {
 
 #filters li span {
     display: block;
-    padding:5px 20px;		
+    padding:5px 20px;
     text-decoration:none;
     color:#fff;
     cursor: pointer;
@@ -800,7 +816,7 @@ h2.resp-accordion:hover {
     #portfoliolist .portfolio {
         width:48%;
         margin:1%;
-    }	
+    }
 
     .widget-profil,
     .flexy_content {
@@ -885,6 +901,12 @@ h2.resp-accordion:hover {
     text-transform: uppercase;
     padding-top: 2px;
     margin-bottom: 5px;
+}
+.mCSB_container {
+    width: auto;
+    margin-right: 30px;
+    overflow: hidden;
+    padding: 15px;
 }
 /*--------------------------------------------------
 ---------------------- Profile ---------------------
@@ -1048,8 +1070,8 @@ ul.about {
 ---------------------------------------------------*/
 
 .widget-profil{
-    height: 580px;   
-    float: right; 
+    height: 580px;
+    float: right;
 }
 .widget-profil .circle {
     display: block;
@@ -1091,7 +1113,7 @@ ul.about {
 .widget-profil  h4 {
     text-align: center;
     font-size: 15px;
-    margin-top: 0px;  
+    margin-top: 0px;
 
 }
 .widget-profil  h6 {
@@ -1167,11 +1189,11 @@ ul.about {
 
 @media only screen and (min-width: 1200px) {
 
-    .widget-profil #profile_social a{ 
-        width: 45px;	
-        height: 45px;	
-        line-height: 45px;	
-        font-size: 24px;	
+    .widget-profil #profile_social a{
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 24px;
     }
     .widget-profil h1 {
         font-size: 25px;
@@ -1181,11 +1203,11 @@ ul.about {
 
 @media only screen and (max-width: 1199px) {
 
-    .widget-profil #profile_social a { 
-        width: 34px;	
-        height: 34px;	
-        line-height: 34px;	
-        font-size: 20px;	
+    .widget-profil #profile_social a {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 20px;
     }
 
     .widget-profil h1 {
@@ -1205,7 +1227,7 @@ ul.about {
         font-size: 13px !important;
     }
 
-    .widget-profil{ 	
+    .widget-profil{
         height: 265px !important;
         margin-bottom: 20px;
         float: none;
@@ -1219,7 +1241,7 @@ ul.about {
 }
 
 @media only screen  and (max-width: 766px) {
-    .widget-profil{ 	
+    .widget-profil{
         height: 285px !important;
         margin-bottom: 20px;
         float: none;
@@ -1242,7 +1264,7 @@ ul.about {
 }
 
 @media only screen and (min-width : 766px) and (max-width: 800px) {
-    .widget-profil{ 	
+    .widget-profil{
         height: 210px !important;
         margin-bottom: 20px;
         float: none;
@@ -1261,8 +1283,8 @@ ul.about {
 
 @media only screen and (min-width : 800px) and (max-width : 991px) {
 
-    .widget-profil{ 	
-        height: 210px !important;	
+    .widget-profil{
+        height: 210px !important;
         margin-bottom: 20px;
         float: none;
     }
@@ -2435,7 +2457,7 @@ ul.info-post li {
 @media screen and (max-width: 600px) {
     .cb-slideshow li div h3 {
         font-size: 50px
-    }		
+    }
 
     #services .pack-service {
         width: 100% !important;
@@ -2571,7 +2593,7 @@ ul.info-post li {
     }
 
     .contact-info,
-    #contactform .reset, 
+    #contactform .reset,
     #comment_form .reset,
     section.button-demo {
         width: 100%;
@@ -2606,7 +2628,7 @@ ul.info-post li {
         font-size: 13px;
     }
 
-    #contactform .submit, #contactform .reset, 
+    #contactform .submit, #contactform .reset,
     #comment_form .submit, #comment_form .reset {
         margin-left: 0;
     }
@@ -2689,9 +2711,9 @@ ul.info-post li {
 }
 
 
-@media screen and (min-width:850px) and (max-width: 1200px)  { 
-    .resp-vtabs .resp-tabs-container { 
-        width:89%; 
+@media screen and (min-width:850px) and (max-width: 1200px)  {
+    .resp-vtabs .resp-tabs-container {
+        width:89%;
     }
 }
 
@@ -2795,7 +2817,7 @@ li h6{
     font-size: 13px;
 }
 .panel{
-    border:none !important;	
+    border:none !important;
 }
 
 #services .pack-service {
@@ -2869,7 +2891,7 @@ li h6{
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);	
+    transform: rotate(-45deg);
     -webkit-transform-origin: 0 100%;
     -moz-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
@@ -2962,12 +2984,12 @@ li h6{
 }
 
 #print,
-#download { 
+#download {
     background: rgba(45, 57, 63, 0.8);
 }
 
 #print:hover,
-#download:hover { 
+#download:hover {
     background: rgba(45, 57, 63, 1);
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
@@ -2988,4 +3010,3 @@ div.ppt {
 #contact #profile_social {
 	display: block !important;
 }
-
