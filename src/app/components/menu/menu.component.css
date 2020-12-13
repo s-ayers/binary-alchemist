@@ -1,4 +1,4 @@
-#menu > ul {
+ul.menu {
   box-sizing: border-box;
   color: rgb(51, 51, 51);
   display: block;
@@ -36,7 +36,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#menu > ul > li {
+ul.menu > li {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(59, 89, 152);
@@ -80,8 +80,8 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#menu > ul > li.active,
-#menu > ul > li:hover {
+ul.menu > li.active,
+ul.menu > li:hover {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(255, 255, 255) !important;
@@ -129,8 +129,8 @@
   width: 76px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-#menu > ul > li > a:hover,
-#menu > ul > li > a:active {
+ul.menu > li > a:hover,
+ul.menu > li > a:active {
   background-attachment: scroll;
   background-clip: border-box;
   /* background-color: rgb(255, 255, 255); */
@@ -187,8 +187,8 @@
   z-index: 1;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-#menu > ul > li > a > i:hover,
-#menu > ul > li > a:active > i {
+ul.menu > li > a > i:hover,
+ul.menu > li > a:active > i {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(59, 89, 152) !important;
@@ -235,4 +235,11 @@
   z-index: 2;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+@media only screen and (max-width: 800px) {
+  ul.menu {
+      display: none;
+  }
 }
