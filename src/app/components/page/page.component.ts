@@ -30,7 +30,7 @@ export class PageComponent implements AfterViewInit, OnDestroy {
       this.collapsed = !this.collapsed;
     }
     if (!this.collapsed) {
-      setTimeout(()=>{
+      setTimeout(() => {
         $('html, body').animate({ scrollTop: $('h2.resp-accordion.resp-tab-active').offset().top - 10 }, 600);
       });
 

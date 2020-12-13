@@ -16,7 +16,7 @@
 
             <div class="col-md-9 flexy_content" style="padding-left: 0;padding-right: 0;">
               <!-- verticalTab menu -->
-              <div id="menu">
+              <div id="menu" class="resp-vtabs">
                 <app-menu></app-menu>
 
                 <!-- resp-tabs-container -->
@@ -49,13 +49,9 @@
 
 
 
-<!-- Js | gmaps -->
-<!-- Credits: http://maps.google.com/maps/api/js?sensor=true-->
 <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
 
-
-<!-- code js for image rotate -->
-<script type="text/javascript">
+<script>
 
   var mouseX;
   var mouseY;
@@ -85,7 +81,7 @@
 
   }
 
-  /* This function is called on mouse move and gets the mouse position. 
+  /* This function is called on mouse move and gets the mouse position.
    * It also calls the HeadImage function to display the correct image*/
   function getMousePosition(event) {
 

@@ -1,4 +1,4 @@
-#menu > ul {
+ul.menu {
   box-sizing: border-box;
   color: rgb(51, 51, 51);
   display: block;
@@ -36,7 +36,7 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#menu > ul > li {
+ul.menu > li {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(59, 89, 152);
@@ -80,8 +80,11 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#menu > ul > li.active,
-#menu > ul > li:hover {
+ul.menu > li.resp-tab-active,
+ul.menu > li:hover {
+  color: #3b5998;
+  background-color: rgb(255, 255, 255);
+/*
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(255, 255, 255) !important;
@@ -127,19 +130,21 @@
   transition-timing-function: ease-in;
   vertical-align: baseline;
   width: 76px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
-#menu > ul > li > a:hover,
-#menu > ul > li > a:active {
+
+ul.menu > li > a:hover,
+ul.menu > li > a:active {
+  /* color: #3b5998; */
+  /* background-color: rgb(255, 255, 255); */
+/*
   background-attachment: scroll;
   background-clip: border-box;
-  /* background-color: rgb(255, 255, 255); */
   background-image: none;
   background-origin: padding-box;
   background-position-x: 0%;
   background-position-y: 0%;
   background: 0 0;
-  /* color: #3b5998; */
   text-decoration: none !important;
   background-size: auto;
   border-bottom-color: rgb(255, 255, 255);
@@ -153,7 +158,6 @@
   border-top-width: 0px;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px;
   box-sizing: border-box;
-
   cursor: pointer;
   display: block;
   float: left;
@@ -185,13 +189,17 @@
   vertical-align: baseline;
   width: 76px;
   z-index: 1;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
-#menu > ul > li > a > i:hover,
-#menu > ul > li > a:active > i {
+
+ul.menu > li > a > i:hover,
+ul.menu > li > a:active > i {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(59, 89, 152) !important;
+/*
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: rgb(59, 89, 152) !important;
+
   background-image: none;
   background-origin: padding-box;
   background-position-x: 0%;
@@ -203,7 +211,7 @@
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   box-sizing: border-box;
-  color: rgb(255, 255, 255) !important;
+
   cursor: pointer;
   display: inline-block;
   font-family: FontAwesome;
@@ -234,5 +242,12 @@
   width: 42px;
   z-index: 2;
   -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+}
+
+
+@media only screen and (max-width: 800px) {
+  ul.menu {
+      display: none;
+  }
 }

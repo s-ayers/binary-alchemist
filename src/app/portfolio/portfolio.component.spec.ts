@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { EscapeHtmlPipe } from '../pipes/keep-html.pipe';
 
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
@@ -10,7 +10,7 @@ describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
   let fixture: ComponentFixture<PortfolioComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [PortfolioComponent, ProjectsComponent, EscapeHtmlPipe],
       providers: [MalihuScrollbarService]

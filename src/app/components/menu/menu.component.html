@@ -1,4 +1,4 @@
-<ul class="resp-tabs-list">
+<ul class="menu resp-tabs-list">
     <li (click)="go('/profile')" [class.resp-tab-active]="isActive('/profile')" class="resp-tab-item">
         <a>
             <i class="fa fa-user icon_menu" [class.icon_menu_active]="isActive('/profile')" ></i>
@@ -10,7 +10,7 @@
             <i class="fa fa-tasks icon_menu" [class.icon_menu_active]="isActive('/resume')"></i>
         </a>
     </li>
-
+<!--
     <li (click)="go('/portfolio')" [class.resp-tab-active]="isActive('/portfolio')" class="resp-tab-item">
         <a>
             <i class="fa fa-briefcase icon_menu" [class.icon_menu_active]="isActive('/portfolio')"></i>
@@ -27,10 +27,9 @@
         <a [routerLink]="['/contact']">
             <i class="fa fa-envelope icon_menu" [class.icon_menu_active]="isActive('/contact')"></i>
         </a>
-    </li>
+    </li> -->
 
-    <a href="#" id="print"><i class="fa fa-print icon_print resp-vtabs"></i> </a>
-    <a href="#" id="download"><i class="fa fa-download icon_print resp-vtabs"></i>
-    </a>
+    <!-- <a href="#" id="print"><i class="fa fa-print icon_print resp-vtabs"></i> </a>
+    <a href="#" id="download"><i class="fa fa-download icon_print resp-vtabs"></i></a> -->
 
 </ul>

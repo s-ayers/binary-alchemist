@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { AppComponent } from './app.component';
@@ -7,7 +7,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
       declarations: [
