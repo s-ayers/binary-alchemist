@@ -157,9 +157,6 @@ font-awesome
 malihu-custom-scrollbar-plugin
 MIT
 
-mixitup
-SEE LICENSE IN README.md
-
 ngx-malihu-scrollbar
 MIT
 
