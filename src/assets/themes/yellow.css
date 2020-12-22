@@ -15,7 +15,7 @@ a {
     background: #fff !important;
     color: #FDB000;
 }
-.icon_menu_active, .icon_menu_hover {
+.icon_menu_active, ul.menu-primary > li:hover i, ul.menu-primary > li i:hover  {
     background: #FDB000 !important;
     color: #fff !important;
     transition-property: background-color;
@@ -115,7 +115,7 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     border: 1px solid #FDB000 !important;
 }
 @media only screen and (max-width: 800px) {
-    .icon_menu_active, .icon_menu_hover {
+    .icon_menu_active, ul.menu-primary > li:hover i, ul.menu-primary > li i:hover  {
         background: #fff !important;
         color: #FDB000 !important;
         transition-property: background-color;
