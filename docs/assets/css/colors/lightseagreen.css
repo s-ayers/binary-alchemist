@@ -84,7 +84,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 }
 .resp-tabs-container h1 {
     color: #43B6B1 !important;
-    background: url(../../images/arrows-h3/arrow-lightseagreen-h3.png) no-repeat 0px 3px;
+    background: url(../images/arrows-h3/arrow-lightseagreen-h3.png) no-repeat 0px 3px;
 }
 
 @media screen and (max-width:540px) {
@@ -167,7 +167,7 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
 #sidebar-right .search-blog i, #sidebar-left .search-blog i {
     background: #43B6B1;
 }
-.icon-switcher {	
+.icon-switcher {
     color: #43B6B1 !important;
 }
 .resp-tabs-list li {
@@ -183,7 +183,7 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     background: #43B6B1;
 }
 .widget-profil{
-    background: #43B6B1;   
+    background: #43B6B1;
 }
 .widget-profil .head-image{
     border: 10px solid #66c6c2;
@@ -192,10 +192,10 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     color:#b1e2df;
 }
 .widget-profil  h4 {
-    color:#b1e2df; 
+    color:#b1e2df;
 }
 .widget-profil  h6 {
-    color:#b1e2df;  
+    color:#b1e2df;
 }
 .widget-profil .circle-img {
     border: 10px solid #66c6c2;

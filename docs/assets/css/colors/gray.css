@@ -84,7 +84,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 }
 .resp-tabs-container h1 {
     color: #888 !important;
-    background: url(../../images/arrows-h3/arrow-gray-h3.png) no-repeat 0px 3px;
+    background: url(../images/arrows-h3/arrow-gray-h3.png) no-repeat 0px 3px;
 }
 
 @media screen and (max-width:540px) {
@@ -95,7 +95,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 #contactform .submit, #comment_form .submit {
     background-color: #888;
 }
-#profile .about i.glyphicon, 
+#profile .about i.glyphicon,
 #profile .about label {
     color: #888;
 }
@@ -146,9 +146,9 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
 .nbs-flexisel-inner {
     border: 5px solid #888;
 }
-#nb_post, .reply, 
-.tag, .info-post i.glyphicon, 
-.info i.glyphicon, 
+#nb_post, .reply,
+.tag, .info-post i.glyphicon,
+.info i.glyphicon,
 i.fa-quote-left {
     color: #888 !important;
 }
@@ -171,7 +171,7 @@ i.fa-quote-left {
 #sidebar-right .search-blog i, #sidebar-left .search-blog i {
     background: #888;
 }
-.icon-switcher {	
+.icon-switcher {
     color: #888 !important;
 }
 .resp-tabs-list li {
@@ -187,7 +187,7 @@ i.fa-quote-left {
     background: #888;
 }
 .widget-profil{
-    background: #888;   
+    background: #888;
 }
 .widget-profil .head-image{
     border: 10px solid #a2a2a2;
@@ -208,7 +208,7 @@ i.fa-quote-left {
 }
 
 .widget-profil  h6 {
-    color:#c8c8c8;  
+    color:#c8c8c8;
 }
 .widget-profil  p {
     color:#c8c8c8 !important;

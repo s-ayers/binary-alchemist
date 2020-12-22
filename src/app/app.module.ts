@@ -24,6 +24,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { MalihuScrollbarModule } from 'ngx-malihu-scrollbar';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
+import { SettingsComponent } from './settings/settings.component';
+import { ThemingService } from './services/theming.service';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { SkillsComponent } from './skills/skills.component';
     EscapeHtmlPipe,
     ProjectsComponent,
     HomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { PageComponent } from '../components/page/page.component';
 import * as person from '../app.json';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
+import { MenuService } from '../services/menu.service';
 
 @Component({
   selector: 'app-contact',
@@ -15,8 +16,7 @@ export class ContactComponent extends PageComponent {
   public locationString: string = person.location;
   public website: string = person.website;
 
-  constructor(mScrollbarService: MalihuScrollbarService, location: Location) {
-    super(mScrollbarService, location);
-
+  constructor(mScrollbarService: MalihuScrollbarService, location: Location, menuService: MenuService) {
+    super(mScrollbarService, location, menuService);
   }
 }

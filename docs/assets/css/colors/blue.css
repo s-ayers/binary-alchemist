@@ -84,7 +84,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 }
 .resp-tabs-container h1 {
     color: #0087F7 !important;
-    background: url(../../images/arrows-h3/arrow-blue-h3.png) no-repeat 0px 3px;
+    background: url(../images/arrows-h3/arrow-blue-h3.png) no-repeat 0px 3px;
 }
 
 @media screen and (max-width:540px) {
@@ -98,7 +98,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 #profile .about i.glyphicon, #profile .about label {
     color: #0087F7;
 }
-#section-title, 
+#section-title,
 #categories_sidebar ul.categories li a:hover {
     background: #0087F7;
 }
@@ -146,9 +146,9 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
 .nbs-flexisel-inner {
     border: 5px solid #0087F7;
 }
-#nb_post, .reply, .tag, 
-.info-post i.glyphicon, 
-.info i.glyphicon, 
+#nb_post, .reply, .tag,
+.info-post i.glyphicon,
+.info i.glyphicon,
 i.fa-quote-left {
     color: #0087F7 !important;
 }
@@ -169,11 +169,11 @@ i.fa-quote-left {
     transition: all .3s ease-in;
 }
 
-#sidebar-right .search-blog i, 
+#sidebar-right .search-blog i,
 #sidebar-left .search-blog i {
     background: #0087F7;
 }
-.icon-switcher {	
+.icon-switcher {
     color: #0087F7 !important;
 }
 .resp-tabs-list li {
@@ -189,7 +189,7 @@ i.fa-quote-left {
     background: #0087F7;
 }
 .widget-profil{
-    background: #0087F7;   
+    background: #0087F7;
 }
 .widget-profil .head-image{
     border: 10px solid #2b9fff;
@@ -201,10 +201,10 @@ i.fa-quote-left {
     color:#78c2ff;
 }
 .widget-profil  h4 {
-    color:#78c2ff; 
+    color:#78c2ff;
 }
 .widget-profil  h6 {
-    color:#78c2ff;   
+    color:#78c2ff;
 }
 .widget-profil  p {
     color:#78c2ff !important;

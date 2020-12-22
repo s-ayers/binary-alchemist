@@ -1,20 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent {
+export class MenuComponent implements OnInit {
   url: string;
+  primary: any[];
 
-  constructor(private router: Router, private location: Location) {
+  constructor(private router: Router, private location: Location, private menuService: MenuService) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.url = event.url;
       }
+    });
+  }
+
+  ngOnInit() {
+    console.log(this.menuService.get());
+    this.menuService.primary$.subscribe(menus => {
+      console.log(menus);
+      this.primary = menus;
     });
   }
 
@@ -33,7 +43,8 @@ export class MenuComponent {
   }
 
   go(routestring) {
-    this.location.go(routestring);
+    // this.location.go(routestring);
+    this.router.navigateByUrl(routestring);
   }
 
 }

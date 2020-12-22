@@ -84,7 +84,7 @@ a.readmore:hover, a.readmore:focus, a.readmore:active {
 }
 .resp-tabs-container h1 {
     color: #EF3E96 !important;
-    background: url(../../images/arrows-h3/arrow-rose-h3.png) no-repeat 0px 3px;
+    background: url(../images/arrows-h3/arrow-rose-h3.png) no-repeat 0px 3px;
 }
 
 @media screen and (max-width:540px) {
@@ -167,7 +167,7 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
 #sidebar-right .search-blog i, #sidebar-left .search-blog i {
     background: #EF3E96;
 }
-.icon-switcher {	
+.icon-switcher {
     color: #EF3E96 !important;
 }
 .resp-tabs-list li {
@@ -183,7 +183,7 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     background: #EF3E96;
 }
 .widget-profil{
-    background: #EF3E96;   
+    background: #EF3E96;
 }
 .widget-profil .head-image{
     border: 10px solid #f36db0;
@@ -195,10 +195,10 @@ h2.resp-accordion:hover .hi-icon, .no-touch .hi-icon-effect-5 .hi-icon:hover {
     color:#f9b4d6;
 }
 .widget-profil  h4 {
-    color:#f9b4d6; 
+    color:#f9b4d6;
 }
 .widget-profil  h6 {
-    color:#f9b4d6; 
+    color:#f9b4d6;
 }
 .widget-profil  p {
     color:#f9b4d6 !important;
