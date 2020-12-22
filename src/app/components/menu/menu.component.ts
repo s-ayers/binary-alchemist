@@ -21,9 +21,7 @@ export class MenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.menuService.get());
     this.menuService.primary$.subscribe(menus => {
-      console.log(menus);
       this.primary = menus;
     });
   }
@@ -43,7 +41,6 @@ export class MenuComponent implements OnInit {
   }
 
   go(routestring) {
-    // this.location.go(routestring);
     this.router.navigateByUrl(routestring);
   }
 

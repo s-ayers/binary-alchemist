@@ -19,7 +19,6 @@ export class MenuService {
       prime.push({ route, icon });
       this.primary$.next(prime);
     }
-    console.log(route, icon, menu);
     this.items.push({ route: icon, menu });
   }
 
@@ -36,7 +35,6 @@ export class MenuService {
   }
 
   public getPrimary(): Observable<any[]> {
-    console.log('Im inside getPrimary');
     return this.primary$;
   }
 }
