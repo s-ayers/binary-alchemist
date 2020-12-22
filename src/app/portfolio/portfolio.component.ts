@@ -6,6 +6,7 @@ import { PageComponent } from '../components/page/page.component';
 import { Project } from '../components/projects/project.model';
 import { Projects } from '../components/projects/projects.data';
 import { Location } from '@angular/common';
+import { MenuService } from '../services/menu.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -17,8 +18,8 @@ export class PortfolioComponent extends PageComponent implements AfterViewInit {
   routestring = '/portfolio';
   categories: string[] = [];
   projects: Project[] = Projects;
-  constructor(mScrollbarService: MalihuScrollbarService, location: Location) {
-    super(mScrollbarService, location);
+  constructor(mScrollbarService: MalihuScrollbarService, location: Location, menuService: MenuService) {
+    super(mScrollbarService, location, menuService);
 
     this.projects.forEach(project => {
       if (this.categories.indexOf(project.category) === -1) {

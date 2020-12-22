@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
+import { MenuService } from '../services/menu.service';
 
 @Component({
   selector: 'app-blog',
@@ -11,7 +12,7 @@ import { Location } from '@angular/common';
 export class BlogComponent extends PageComponent {
   routestring = '/blog';
 
-  constructor(mScrollbarService: MalihuScrollbarService, location: Location) {
-    super(mScrollbarService, location);
+  constructor(mScrollbarService: MalihuScrollbarService, location: Location, menuService: MenuService) {
+    super(mScrollbarService, location, menuService);
   }
 }

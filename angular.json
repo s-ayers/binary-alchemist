@@ -32,8 +32,8 @@
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
               "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
-              "src/assets/css/colors/DarkBlue.css",
               "src/assets/css/main.css",
+
               "src/assets/css/prettyPhoto.css"
             ],
             "scripts": [

@@ -36,10 +36,10 @@ ul.menu {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-ul.menu > li {
+ul.menu>li {
   background-attachment: scroll;
   background-clip: border-box;
-  background-color: rgb(59, 89, 152);
+  /* background-color: rgb(59, 89, 152); */
   background-image: none;
   background-origin: padding-box;
   background-position-x: 0%;
@@ -47,7 +47,7 @@ ul.menu > li {
   background-size: auto;
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px;
   box-sizing: border-box;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   cursor: pointer;
   display: block;
   float: left;
@@ -80,11 +80,10 @@ ul.menu > li {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-ul.menu > li.resp-tab-active,
-ul.menu > li:hover {
-  color: #3b5998;
-  background-color: rgb(255, 255, 255);
-/*
+ul.menu>li.resp-tab-active, ul.menu>li:hover {
+  /* color: #3b5998; */
+  /* background-color: rgb(255, 255, 255); */
+  /*
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgb(255, 255, 255) !important;
@@ -133,11 +132,10 @@ ul.menu > li:hover {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
-ul.menu > li > a:hover,
-ul.menu > li > a:active {
+ul.menu>li>a:hover, ul.menu>li>a:active {
   /* color: #3b5998; */
   /* background-color: rgb(255, 255, 255); */
-/*
+  /*
   background-attachment: scroll;
   background-clip: border-box;
   background-image: none;
@@ -192,11 +190,10 @@ ul.menu > li > a:active {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
-ul.menu > li > a > i:hover,
-ul.menu > li > a:active > i {
-  color: rgb(255, 255, 255) !important;
-  background-color: rgb(59, 89, 152) !important;
-/*
+ul.menu>li>a>i:hover, ul.menu>li>a:active>i {
+  /* color: rgb(255, 255, 255) !important; */
+  /* background-color: rgb(59, 89, 152) !important; */
+  /*
   background-attachment: scroll;
   background-clip: border-box;
 
@@ -245,9 +242,40 @@ ul.menu > li > a:active > i {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
 }
 
-
 @media only screen and (max-width: 800px) {
   ul.menu {
-      display: none;
+    display: none;
   }
 }
+
+.menu-secondary {
+  display: none;
+}
+
+/* Extra small devices (phones, less than 768px) */
+
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+  .menu-secondary {
+    display: block;
+    position: absolute;
+    bottom: -570px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+  .menu-secondary {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}

@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
+import { MenuService } from 'src/app/services/menu.service';
 
 declare var $: any;
 
@@ -8,12 +9,12 @@ declare var $: any;
   selector: 'app-page',
   templateUrl: './page.component.html',
   styleUrls: ['./page.component.css'],
-  providers: [MalihuScrollbarService]
+  providers: [MalihuScrollbarService, MenuService]
 })
 export class PageComponent implements AfterViewInit, OnDestroy {
   routestring: string;
   collapsed = false;
-  constructor(private mScrollbarService: MalihuScrollbarService, private location: Location) {
+  constructor(protected mScrollbarService: MalihuScrollbarService, protected location: Location, protected menuService: MenuService) {
 
   }
 
