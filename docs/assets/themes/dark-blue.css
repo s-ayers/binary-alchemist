@@ -15,9 +15,8 @@ a {
   background: #fff !important;
   color: #3b5998;
 }
-.icon_menu_active,
-.icon_menu_hover,
-.resp-tab-item:hover .icon_menu {
+
+.icon_menu_active, ul.menu-primary > li:hover i, ul.menu-primary > li i:hover  {
   background: #3b5998 !important;
   color: #fff !important;
   transition-property: background-color;
