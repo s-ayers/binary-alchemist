@@ -135,8 +135,8 @@ h2.resp-accordion:hover .hi-icon,
   .icon_menu_active,
   .icon_menu_hover,
   .resp-tab-item:hover .icon_menu {
-    background: #fff !important;
-    color: #3b5998 !important;
+    /* background: #fff !important; */
+    /* color: #3b5998 !important; */
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: linear;
