@@ -7,9 +7,20 @@ import * as person from '../../app.json';
 })
 export class ExperienceComponent implements OnInit {
   experience: any[];
+  years: number;
   constructor() {}
 
   ngOnInit() {
     this.experience = person.experience;
+
+    let first = (new Date()).getFullYear();
+    this.experience.forEach(element => {
+      // console.log(element);
+      if (element.start < first) {
+        first = element.start;
+      }
+    });
+
+    this.years = (new Date()).getFullYear() - first;
   }
 }

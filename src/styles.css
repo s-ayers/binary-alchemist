@@ -1226,9 +1226,9 @@ ul.about {
   border-left: 0px;
 }
 
-.widget-profil #profile_desc {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.widget-profil #profile_desc blockquote {
+  margin: 0;
+  padding: 0;
 }
 
 .widget-profil #profile_info {
