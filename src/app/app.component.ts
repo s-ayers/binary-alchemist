@@ -17,32 +17,25 @@ export class AppComponent implements OnInit {
 
     menuService.add('/profile', 'fa-user');
     menuService.add('/resume', 'fa-tasks');
+    // menuService.add('/portfolio', 'fa-briefcase');
+
   }
 
   ngOnInit() {
     this.themingService.Load('');
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
-          return;
+        return;
       }
 
-      const animation_style = 'bounceIn';
-      $('.resp-tabs-container').addClass('animated ' + animation_style);
-      $('.resp-tabs-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-          $('.resp-tabs-container').removeClass('animated ' + animation_style);
+      const animationStyle = 'bounceIn';
+      $('.resp-tabs-container').addClass('animated ' + animationStyle);
+      $('.resp-tabs-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+        $('.resp-tabs-container').removeClass('animated ' + animationStyle);
       });
-  });
+    });
 
-
-  // const animation_style = 'bounceIn';
-
-  // $('ul.menu-primary li,ul.menu-secondary li').click( () => {
-
-  //     $('.resp-tabs-container').addClass('animated ' + animation_style);
-  //     $('.resp-tabs-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-  //         $('.resp-tabs-container').removeClass('animated ' + animation_style);
-  //     });
-  // });
 
   }
+
 }
