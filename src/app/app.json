@@ -1,7 +1,7 @@
 {
   "name": "Steven Ayers",
   "location": "New Lenox, IL",
-  "title": "PROPERTY MANAGER & SOFTWARE DESIGNER",
+  "title": "SOFTWARE ENGINEER",
   "website": "https://binaryalchemist.com",
   "social media": {
     "github": "https://github.com/s-ayers/",
@@ -14,17 +14,17 @@
       "title": "Software Engineer",
       "company": "Jack Henry & Associates",
       "start": "2015",
-      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>"
+      "description": "<p>Create internal tools for internal users to automate common tasks: C#, MSSql, .NET Core, Angular, NodeJS, Azure DevOps CICD</p>"
     },
     {
-      "title": "Software Engineer",
+      "title": "Contractor",
       "company": "Addision Group LLC",
       "start": "2013",
       "stop": "2015",
-      "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>"
+      "description": "<p>Contracted to Discovery Education for software develop. Build interactive textbooks. ReST API backend built with ColdFusion and MSSql. The frontend was build in Ember.</p>"
     },
     {
-      "title": "Software Engineer",
+      "title": "Web Programmer",
       "company": "Barchart",
       "start": "2011",
       "stop": "2013",
@@ -35,7 +35,7 @@
       "company": "Praxia Tech LLC",
       "start": "2010",
       "stop": "2011",
-      "description": "<p>Provide technology services to small business and NGOs.</p>"
+      "description": "<p>Provide technology services to small business and non-profits. Managed contacts with CiviCRM. Online stores with Magento.</p>"
     },
     {
       "title": "Network Engineer",
