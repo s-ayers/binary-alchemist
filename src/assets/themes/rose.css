@@ -4,7 +4,10 @@
 .github-fork-ribbon:before {
     background: #EF3E96;
 }
-
+.ng-scrollbar-thumb {
+    --scrollbar-thumb-color: #f36db0;
+    --scrollbar-thumb-hover-color: #EF3E96;
+  }
 .btn-primary {
     background: #EF3E96;
 }

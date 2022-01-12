@@ -5,6 +5,11 @@
     background: #FDB000;
 }
 
+.ng-scrollbar-thumb {
+    --scrollbar-thumb-color: #ffc031;
+    --scrollbar-thumb-hover-color: #FDB000;
+ }
+
 .btn-primary {
     background: #FDB000;
 }
