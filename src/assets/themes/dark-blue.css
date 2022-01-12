@@ -169,6 +169,12 @@ h2.resp-accordion:hover .hi-icon,
 .nbs-flexisel-inner {
   border: 5px solid #3b5998;
 }
+#nb_post, .reply, .tag,
+.info-post i.glyphicon,
+.info i.glyphicon,
+i.fa-quote-left {
+    color: #3b5998 !important;
+}
 .modal-header {
   background: #3b5998;
 }
