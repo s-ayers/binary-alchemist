@@ -1,4 +1,4 @@
-{
+export const person = {
   "name": "Steven Ayers",
   "location": "New Lenox, IL",
   "title": "SOFTWARE ENGINEER",
