@@ -6,10 +6,7 @@
     --secondary-color: #66951d;
 }
 
-.ng-scrollbar-thumb {
-    --scrollbar-thumb-color: #66951d;
-    --scrollbar-thumb-hover-color: #496A15;
-  }
+
 .btn-primary {
     background: #496A15;
 }
