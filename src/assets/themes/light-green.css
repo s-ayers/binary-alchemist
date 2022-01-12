@@ -1,9 +1,11 @@
 /* ========================================================================================= */
 /* ===================================== lightseagreen #43B6B1 ==================================== */
 /* ========================================================================================= */
-.github-fork-ribbon:before {
-    background: #43B6B1;
+:root {
+    --primary-color: #43B6B1;
+    --secondary-color: #b1e2df;
 }
+
 .ng-scrollbar-thumb {
     --scrollbar-thumb-color: #b1e2df;
     --scrollbar-thumb-hover-color: #43B6B1;
