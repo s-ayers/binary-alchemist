@@ -579,9 +579,7 @@ h2.resp-accordion:hover {
   margin-left: 23px;
 }
 
-#contactform .submit:hover, #comment_form .submit:hover {
-  -webkit-filter: brightness(98%) !important;
-}
+
 
 #contactform .reset:hover, #comment_form .reset:hover {
   background-color: #666;
@@ -1922,7 +1920,7 @@ ul.info-post li {
   margin: 0;
   line-height: 37px;
   text-align: center;
-  background: #da6d0d;
+  background: var(--primary-color);
   color: #fff;
   z-index: 11;
 }

@@ -32,6 +32,7 @@
               "src/assets/css/animate.min.css",
 
               "src/assets/css/main.css",
+              "src/assets/themes/dark-blue.css",
               "src/assets/css/prettyPhoto.css",
               "node_modules/github-fork-ribbon-css/gh-fork-ribbon.css"
             ],
