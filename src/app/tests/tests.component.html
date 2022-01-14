@@ -1,0 +1,14 @@
+<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+  [class.resp-tab-active]="isActive() && !collapsed" role="tab" aria-controls="tab_item-4" (click)="toggle()">
+  <i class="hi-icon fa fa-flask icon_menu" [class.icon_menu_active]="isActive()"></i>
+  <span class="tite-list-resp">
+    tests
+  </span>
+  <i class="glyphicon arrow-tabs" [class.glyphicon-chevron-down]="collapsed || !isActive()"
+    [class.glyphicon-chevron-up]="!collapsed && isActive()"></i>
+</h2>
+<div id="tests" class="content_2" [hidden]="!isActive()||collapsed">
+  <!-- <ng-scrollbar track="all" appearance="standard" class="scrollbar" pointerEventsMethod="viewport || scrollbar"> -->
+    <iframe src="/coverage/html/index.html"></iframe>
+  <!-- </ng-scrollbar> -->
+</div>

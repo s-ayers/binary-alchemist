@@ -10,7 +10,7 @@
         [class.glyphicon-chevron-up]="!collapsed && isActive()"></i>
 </h2>
 <div id="portfolio" class="content_2" [hidden]="!isActive()||collapsed">
-    <ng-scrollbar appearance="standard" class="scrollbar">
+    <ng-scrollbar appearance="standard" class="scrollbar" pointerEventsMethod="viewport || scrollbar">
         <!-- .title -->
         <h1 class="h-bloc">Portfolio - My Works</h1>
 

@@ -23,7 +23,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt",
-              "src/CNAME"
+              "src/CNAME",
+              "src/coverage"
             ],
             "styles": [
               "src/styles.css",
