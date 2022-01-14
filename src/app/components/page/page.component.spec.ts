@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import jQuery from 'jquery';
 import { PageComponent } from './page.component';
 
 
 @Component({
+    // tslint:disable-next-line:component-selector
   selector: 'ng-scrollbar',
   template: ''
 })

@@ -13,6 +13,7 @@ import { SkillsComponent } from '../skills/skills.component';
 import { HomeComponent } from './home.component';
 
 @Component({
+    // tslint:disable-next-line:component-selector
   selector: 'ng-scrollbar',
   template: ''
 })

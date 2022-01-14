@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { BlogComponent } from './blog.component';
 
 @Component({
+    // tslint:disable-next-line:component-selector
   selector: 'ng-scrollbar',
   template: ''
 })

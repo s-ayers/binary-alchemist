@@ -9,8 +9,8 @@ import { EscapeHtmlPipe } from '../pipes/keep-html.pipe';
 import { SkillsComponent } from '../skills/skills.component';
 import { Component } from '@angular/core';
 
-
 @Component({
+    // tslint:disable-next-line:component-selector
   selector: 'ng-scrollbar',
   template: ''
 })

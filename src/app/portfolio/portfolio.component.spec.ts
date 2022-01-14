@@ -7,6 +7,7 @@ import { Projects } from '../components/projects/projects.data';
 import { Component } from '@angular/core';
 
 @Component({
+    // tslint:disable-next-line:component-selector
   selector: 'ng-scrollbar',
   template: ''
 })
