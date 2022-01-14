@@ -111,7 +111,6 @@
               "src/assets/css/animate.min.css",
 
               "src/assets/css/main.css",
-              "src/assets/css/prettyPhoto.css",
               "node_modules/github-fork-ribbon-css/gh-fork-ribbon.css"
             ],
             "scripts": [
@@ -121,7 +120,6 @@
               "src/assets/js/HeadImage.js",
               "src/assets/js/easyResponsiveTabs.js",
 
-              "src/assets/js/jquery.prettyPhoto.js",
               "src/assets/js/main.js"
             ]
           }
