@@ -15,21 +15,21 @@
         [class.glyphicon-chevron-up]="!collapsed && isActive()"></i>
 </h2>
 <div id="settings" class="content_2" [hidden]="!isActive()||collapsed">
+    <ng-scrollbar appearance="standard" class="scrollbar" pointerEventsMethod="viewport || scrollbar">
+        <h1 class="h-bloc">Settings</h1>
+        <div class="row">
+            <div class="col-lg-12">
 
-    <h1 class="h-bloc">Settings</h1>
+                <ul class="list-group">
+                    <li *ngFor="let theme of themes" [style.background-color]="theme.color" class="list-group-item">
+                        <button (click)="setTheme(theme.name)">{{theme.name}}</button>
+                    </li>
+                </ul>
 
 
-    <div class="row">
-
-
-        <div class="col-lg-12">
-
-            <ul class="list-group">
-                <li *ngFor="let theme of themes" [style.background-color]="theme.color" class="list-group-item"><button (click)="setTheme(theme.name)">{{theme.name}}</button> </li>
-            </ul>
-
+            </div>
 
         </div>
 
-    </div>
+    </ng-scrollbar>
 </div>

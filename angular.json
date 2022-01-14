@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",
@@ -30,8 +30,9 @@
               "src/assets/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
-              "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
+
               "src/assets/css/main.css",
+              "src/assets/themes/dark-blue.css",
               "src/assets/css/prettyPhoto.css",
               "node_modules/github-fork-ribbon-css/gh-fork-ribbon.css"
             ],
@@ -41,7 +42,7 @@
               "node_modules/mixitup/dist/mixitup.min.js",
               "src/assets/js/HeadImage.js",
               "src/assets/js/easyResponsiveTabs.js",
-              "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js",
+
               "src/assets/js/jquery.prettyPhoto.js",
               "src/assets/js/main.js"
             ]
@@ -107,7 +108,7 @@
               "src/assets/css/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
-              "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
+
               "src/assets/css/main.css",
               "src/assets/css/prettyPhoto.css",
               "node_modules/github-fork-ribbon-css/gh-fork-ribbon.css"
@@ -118,7 +119,7 @@
               "node_modules/mixitup/dist/mixitup.min.js",
               "src/assets/js/HeadImage.js",
               "src/assets/js/easyResponsiveTabs.js",
-              "node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js",
+
               "src/assets/js/jquery.prettyPhoto.js",
               "src/assets/js/main.js"
             ]

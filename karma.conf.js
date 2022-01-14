@@ -1,6 +1,9 @@
 module.exports = function (config) {
-  const puppeteer = require('puppeteer');
-  process.env.CHROME_BIN = puppeteer.executablePath();
+  const process = require('process');
+  process.env.CHROME_BIN = require('puppeteer').executablePath();
+
+  process.env.NO_PROXY = 'localhost, 0.0.0.0/4201, 0.0.0.0/9876';
+  process.env.no_proxy = 'localhost, 0.0.0.0/4201, 0.0.0.0/9876';
 
   config.set({
     basePath: '',
@@ -17,7 +20,6 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, 'coverage'),
       reports: ['html', 'lcovonly', 'text-summary', 'cobertura'],
       fixWebpackSourcePaths: true
     },
@@ -29,7 +31,13 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadlessNoSandbox'],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
     singleRun: false
   });
 };

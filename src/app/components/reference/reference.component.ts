@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as person from '../../app.json';
+import { person } from '../../app';
 
 @Component({
   selector: 'app-reference',

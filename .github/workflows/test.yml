@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 #Checkout Repo
-    - uses: actions/setup-node@v1 #Setup Node
-      with:
-        node-version: '12'
+    - uses: actions/setup-node@v2 #Setup Node
+      # with:
+        # node-version: '12'
     - name: Run Karma Tests
       run: |
         npm install

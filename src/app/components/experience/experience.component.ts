@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as person from '../../app.json';
+import  { person } from '../../app';
+
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
@@ -15,7 +16,6 @@ export class ExperienceComponent implements OnInit {
 
     let first = (new Date()).getFullYear();
     this.experience.forEach(element => {
-      // console.log(element);
       if (element.start < first) {
         first = element.start;
       }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as person from '../../app.json';
+import { person } from '../../app';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   title: string = person.title;
   location: string = person.location;
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

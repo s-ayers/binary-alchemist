@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
-import * as person from '../app.json';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { person } from '../app';
 import { Location } from '@angular/common';
 import { MenuService } from '../services/menu.service';
 
@@ -10,7 +9,7 @@ import { MenuService } from '../services/menu.service';
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css'],
-  providers: [MalihuScrollbarService]
+  providers: [],
 })
 export class ProfileComponent extends PageComponent {
   public name: string = person.name;
@@ -18,8 +17,8 @@ export class ProfileComponent extends PageComponent {
   public website: string = person.website;
   routestring = '/profile';
 
-  constructor(mScrollbarService: MalihuScrollbarService, location: Location, menuService: MenuService) {
-    super(mScrollbarService, location, menuService);
+  constructor(location: Location, menuService: MenuService) {
+    super(location, menuService);
 
   }
 }

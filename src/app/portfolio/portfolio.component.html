@@ -1,6 +1,6 @@
 <!-- .portfolio -->
-<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" [class.resp-tab-active]="isActive() && !collapsed"
-    role="tab" aria-controls="tab_item-2" (click)="toggle()">
+<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+    [class.resp-tab-active]="isActive() && !collapsed" role="tab" aria-controls="tab_item-2" (click)="toggle()">
     <i class="hi-icon fa fa-briefcase icon_menu" [class.icon_menu_active]="isActive()"></i>
     <span class="tite-list-resp">
         portfolio
@@ -10,85 +10,87 @@
         [class.glyphicon-chevron-up]="!collapsed && isActive()"></i>
 </h2>
 <div id="portfolio" class="content_2" [hidden]="!isActive()||collapsed">
-    <!-- .title -->
-    <h1 class="h-bloc">Portfolio - My Works</h1>
+    <ng-scrollbar appearance="standard" class="scrollbar">
+        <!-- .title -->
+        <h1 class="h-bloc">Portfolio - My Works</h1>
 
-    <!-- .container-portfolio -->
+        <!-- .container-portfolio -->
 
-    <div class="container-portfolio">
+        <div class="container-portfolio">
 
-        <!-- #filters -->
-        <ul id="filters" class="clearfix">
-            <li>
-                <span class="filter active" [attr.data-filter]="categories.join(' ')">All</span>
-            </li>
-            <li *ngFor="let category of categories">
-                <span class="filter"  [attr.data-filter]="category">{{category}}</span>
-            </li>
-        </ul>
-        <!-- /#filters -->
+            <!-- #filters -->
+            <ul id="filters" class="clearfix">
+                <li>
+                    <span class="filter active" [attr.data-filter]="categories.join(' ')">All</span>
+                </li>
+                <li *ngFor="let category of categories">
+                    <span class="filter" [attr.data-filter]="category">{{category}}</span>
+                </li>
+            </ul>
+            <!-- /#filters -->
 
-        <!-- #portfoliolist -->
-        <div id="portfoliolist">
+            <!-- #portfoliolist -->
+            <div id="portfoliolist">
 
-            <app-projects *ngFor="let project of projects" [project]="project"></app-projects>
+                <app-projects *ngFor="let project of projects" [project]="project"></app-projects>
 
-            <div class="clear"></div>
+                <div class="clear"></div>
 
+            </div>
+            <!-- #images/portfoliolist -->
         </div>
-        <!-- #images/portfoliolist -->
-    </div>
-    <!-- /.container-portfolio -->
+        <!-- /.container-portfolio -->
+    </ng-scrollbar>
 </div>
 <!-- End .portfolio -->
 <script>
-    $(document).ready(function(){
-            /* ---------------------------------------------------------------------- */
-      /* ----------------------------- Portfolio ------------------------------ */
-      /* ---------------------------------------------------------------------- */
+    $(document).ready(function () {
+        /* ---------------------------------------------------------------------- */
+        /* ----------------------------- Portfolio ------------------------------ */
+        /* ---------------------------------------------------------------------- */
 
 
-      var filterList = {
-          init: function () {
+        var filterList = {
+            init: function () {
 
-              // MixItUp plugin
-              // http://mixitup.io
-              $('#portfoliolist').mixitup({
-                  targetSelector: '.portfolio',
-                  filterSelector: '.filter',
-                  effects: ['fade'],
-                  easing: 'snap',
-                  // call the hover effect
-                  onMixEnd: filterList.hoverEffect()
-              });
+                // MixItUp plugin
+                // http://mixitup.io
+                $('#portfoliolist').mixitup({
+                    targetSelector: '.portfolio',
+                    filterSelector: '.filter',
+                    effects: ['fade'],
+                    easing: 'snap',
+                    // call the hover effect
+                    onMixEnd: filterList.hoverEffect()
+                });
 
-          },
-          hoverEffect: function () {
+            },
+            hoverEffect: function () {
 
-              // Simple parallax effect
-          $('#portfoliolist .portfolio').hover(
-              function() {
-                  $(this).find('.label').stop().animate({bottom: 0}, 200);
-                  $(this).find('img').stop().animate({top: -30}, 500);
-              },
-              function() {
-                  $(this).find('.label').stop().animate({bottom: -40}, 200);
-                  $(this).find('img').stop().animate({top: 0}, 300);
-              }
-          );
+                // Simple parallax effect
+                $('#portfoliolist .portfolio').hover(
+                    function () {
+                        $(this).find('.label').stop().animate({ bottom: 0 }, 200);
+                        $(this).find('img').stop().animate({ top: -30 }, 500);
+                    },
+                    function () {
+                        $(this).find('.label').stop().animate({ bottom: -40 }, 200);
+                        $(this).find('img').stop().animate({ top: 0 }, 300);
+                    }
+                );
 
-          }
+            }
 
-      };
+        };
 
-      // Run the show!
-      filterList.init();
+        // Run the show!
+        filterList.init();
 
-      $('#filters .filter').click( (element) => {
-          console.log(element);
-        $('#filters .filter.active').removeClass('active');
-        $(element).addClass('active');
-      });
+        $('#filters .filter').click((element) => {
+            console.log(element);
+            $('#filters .filter.active').removeClass('active');
+            $(element).addClass('active');
+        });
 
     });
-  </script>
+</script>

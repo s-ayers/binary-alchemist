@@ -1,5 +1,4 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
 import { MenuService } from 'src/app/services/menu.service';
 
@@ -9,12 +8,12 @@ declare var $: any;
   selector: 'app-page',
   templateUrl: './page.component.html',
   styleUrls: ['./page.component.css'],
-  providers: [MalihuScrollbarService, MenuService]
+  providers: [MenuService]
 })
 export class PageComponent implements AfterViewInit, OnDestroy {
   routestring: string;
   collapsed = false;
-  constructor(protected mScrollbarService: MalihuScrollbarService, protected location: Location, protected menuService: MenuService) {
+  constructor(protected location: Location, protected menuService: MenuService) {
 
   }
 
@@ -46,21 +45,21 @@ export class PageComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
-    this.mScrollbarService.initScrollbar('.content_2', {
-      theme: 'dark-2',
-      contentTouchScroll: true,
-      advanced: {
-        updateOnContentResize: true,
-        updateOnBrowserResize: true,
-        autoScrollOnFocus: false
-      }
-    });
-    if (window.innerWidth <= 800) {
-      $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 10 }, 600);
+    // this.mScrollbarService.initScrollbar('.content_2', {
+    //   theme: 'dark-2',
+    //   contentTouchScroll: true,
+    //   advanced: {
+    //     updateOnContentResize: true,
+    //     updateOnBrowserResize: true,
+    //     autoScrollOnFocus: false
+    //   }
+    // });
+    // if (window.innerWidth <= 800) {
+    //   $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 10 }, 600);
 
-    }
+    // }
   }
   ngOnDestroy() {
-    this.mScrollbarService.destroy('.content_2');
+    // this.mScrollbarService.destroy('.content_2');
   }
 }

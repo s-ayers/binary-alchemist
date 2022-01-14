@@ -1,7 +1,15 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ProfileComponent } from './profile.component';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { Component } from '@angular/core';
+
+@Component({
+    // tslint:disable-next-line:component-selector
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
 
 describe('ProfileComponent', () => {
   let component: ProfileComponent;
@@ -9,8 +17,8 @@ describe('ProfileComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ProfileComponent],
-      providers: [MalihuScrollbarService]
+      declarations: [ProfileComponent, MockScrollbarComponent],
+      providers: []
     }).compileComponents();
   }));
 

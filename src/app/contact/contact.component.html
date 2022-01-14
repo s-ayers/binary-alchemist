@@ -1,6 +1,6 @@
 <!-- .contact -->
-<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" [class.resp-tab-active]="isActive() && !collapsed"
-    role="tab" aria-controls="tab_item-4" (click)="toggle()">
+<h2 class="resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a"
+    [class.resp-tab-active]="isActive() && !collapsed" role="tab" aria-controls="tab_item-4" (click)="toggle()">
     <i class="hi-icon fa fa-envelope icon_menu" [class.icon_menu_active]="isActive()"></i>
     <span class="tite-list-resp">
         contact
@@ -9,78 +9,78 @@
         [class.glyphicon-chevron-up]="!collapsed && isActive()"></i>
 </h2>
 <div id="contact" class="content_2" [hidden]="!isActive()||collapsed">
+    <ng-scrollbar appearance="standard" class="scrollbar">
+        <h1 class="h-bloc">Contact - Contact Me</h1>
 
-    <h1 class="h-bloc">Contact - Contact Me</h1>
 
-
-    <div class="row">
-        <!--
+        <div class="row">
+            <!--
         <div class="col-lg-12">
             <div id="map"></div>
         </div> -->
 
-        <div class="col-lg-12">
-            <div class="row" id="contact-user">
-                <div class="col-md-5">
-                    <div class="contact-info">
+            <div class="col-lg-12">
+                <div class="row" id="contact-user">
+                    <div class="col-md-5">
+                        <div class="contact-info">
 
-                        <div class="title_content" style="float: none;">
-                            <div class="text_content">Contact info</div>
-                            <div class="clear"></div>
-                        </div>
+                            <div class="title_content" style="float: none;">
+                                <div class="text_content">Contact info</div>
+                                <div class="clear"></div>
+                            </div>
 
-                        <ul>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i>
-                                    Adress:</span> {{locationString}}</li>
-                            <!-- <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i>
+                            <ul>
+                                <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i>
+                                        Adress:</span> {{locationString}}</li>
+                                <!-- <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i>
                                     Email:</span> brown.smith@gmail.com</li> -->
-                            <!-- <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i>
+                                <!-- <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i>
                                     Phone:</span> +123 456 789 111</li> -->
-                            <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i>
-                                    Website:</span> <a href="{{website}}">{{website}}</a></li>
-                            <!-- <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i>
+                                <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i>
+                                        Website:</span> <a href="{{website}}">{{website}}</a></li>
+                                <!-- <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i>
                                     Skype:</span> brown-smith-skype</li>
                             <li><span class="span-info"><i class="glyphicon glyphicon-thumbs-up"></i>
                                     G. Drive:</span> brown-s-gm@gmail.com</li>
                             <li><span class="span-info"><i class="glyphicon glyphicon-unchecked"></i>
                                     Skydrive:</span> brown-s-sk@hotmail.com</li> -->
-                        </ul>
-                    </div>
-                    <!-- /Contact Info -->
-                    <div class="clear"></div>
-
-                    <!--<h3 class="main-heading" style="margin-left: 22px;"><span>Follow me</span></h3>-->
-
-
-
-                </div>
-                <div class="col-md-7">
-                    <div class="title_content tiltle_contacts" style="float: none;">
-                        <div class="text_content">Follow me</div>
+                            </ul>
+                        </div>
+                        <!-- /Contact Info -->
                         <div class="clear"></div>
+
+                        <!--<h3 class="main-heading" style="margin-left: 22px;"><span>Follow me</span></h3>-->
+
+
+
                     </div>
+                    <div class="col-md-7">
+                        <div class="title_content tiltle_contacts" style="float: none;">
+                            <div class="text_content">Follow me</div>
+                            <div class="clear"></div>
+                        </div>
 
-                    <div id="profile_social">
+                        <div id="profile_social">
 
-                        <app-social-media></app-social-media>
+                            <app-social-media></app-social-media>
+
+                        </div>
 
                     </div>
-
                 </div>
-            </div>
-            <div class="row">
+                <div class="row">
 
-                <div class="col-md-7">
-                    <!-- Contact Form -->
-                    <div class="title_content" style="float: none;">
-                        <!-- <div class="text_content">Let's keep in touch</div> -->
-                        <div class="clear"></div>
-                    </div>
+                    <div class="col-md-7">
+                        <!-- Contact Form -->
+                        <div class="title_content" style="float: none;">
+                            <!-- <div class="text_content">Let's keep in touch</div> -->
+                            <div class="clear"></div>
+                        </div>
 
-                    <div class="contact-form">
+                        <div class="contact-form">
 
-                        <div id="contact-status"></div>
-                        <!--
+                            <div id="contact-status"></div>
+                            <!--
                         <form action="" id="contactform">
                             <p class="form-group" id="contact-name">
                                 <label for="name">Your Name</label>
@@ -101,24 +101,26 @@
                             <input type="reset" name="reset" value="CLEAR" class="reset">
                             <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
 
-                        <!--   <section class="button-demo" style="display: inline-block;">
+                            <!--   <section class="button-demo" style="display: inline-block;">
                             <button class="ladda-button submit send_email" name="submit" data-color="green"
                                 data-style="expand-left">SEND
                                 MESSAGE</button>
                         </section>
 
                         </form> -->
-                        <div class="clear"></div>
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSeVnD06HTn-pGd2x5PCqoF1Zh21kPPmp8oBeopZ0KfNDImTZg/viewform?embedded=true"
-                            width="640" height="822" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <div class="clear"></div>
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSeVnD06HTn-pGd2x5PCqoF1Zh21kPPmp8oBeopZ0KfNDImTZg/viewform?embedded=true"
+                                width="640" height="822" frameborder="0" marginheight="0"
+                                marginwidth="0">Loading…</iframe>
 
+                        </div>
+                        <!-- /Contact Form -->
                     </div>
-                    <!-- /Contact Form -->
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </ng-scrollbar>
 </div>
 <!-- End .contact -->
