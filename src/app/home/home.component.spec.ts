@@ -9,6 +9,7 @@ import { ProfileComponent } from '../profile/profile.component';
 import { ResumeComponent } from '../resume/resume.component';
 import { SettingsComponent } from '../settings/settings.component';
 import { SkillsComponent } from '../skills/skills.component';
+import { TestsComponent } from '../tests/tests.component';
 
 import { HomeComponent } from './home.component';
 
@@ -39,6 +40,7 @@ describe('HomeComponent', () => {
         SettingsComponent,
         SkillsComponent,
         EscapeHtmlPipe,
+        TestsComponent,
       ]
     })
       .compileComponents();

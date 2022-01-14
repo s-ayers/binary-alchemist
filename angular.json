@@ -43,8 +43,6 @@
               "node_modules/mixitup/dist/mixitup.min.js",
               "src/assets/js/HeadImage.js",
               "src/assets/js/easyResponsiveTabs.js",
-
-              "src/assets/js/jquery.prettyPhoto.js",
               "src/assets/js/main.js"
             ]
           },
