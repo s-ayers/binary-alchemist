@@ -53,7 +53,7 @@ export const person = {
     },
 
     {
-      title: 'Technician & Owner',
+      title: 'Technician',
       company: 'Geek-Ware',
       start: '2003',
       stop: '2006',

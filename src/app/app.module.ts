@@ -24,6 +24,7 @@ import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ThemingService } from './services/theming.service';
+import { TestsComponent } from './tests/tests.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ThemingService } from './services/theming.service';
     SettingsComponent,
     SkillsComponent,
     SocialMediaComponent,
+    TestsComponent,
   ],
   imports: [
     BrowserModule,

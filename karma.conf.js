@@ -2,9 +2,6 @@ module.exports = function (config) {
   const process = require('process');
   process.env.CHROME_BIN = require('puppeteer').executablePath();
 
-  process.env.NO_PROXY = 'localhost, 0.0.0.0/4201, 0.0.0.0/9876';
-  process.env.no_proxy = 'localhost, 0.0.0.0/4201, 0.0.0.0/9876';
-
   config.set({
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
@@ -25,7 +22,12 @@ module.exports = function (config) {
     },
     reporters: ['progress', 'kjhtml', 'junit'],
     junitReporter: {
-      outputDir: 'coverage/junit'
+      outputDir: 'src/coverage/junit'
+    },
+    coverageReporter: {
+      dir: 'src/coverage',
+      subdir: 'html'
+      // Would output the results into: .'/coverage/'
     },
     port: 9876,
     colors: true,
