@@ -109,7 +109,12 @@
             <div class="col-md-6 profile-r">
 
                 <div class="cycle-slideshow">
-                    <img src="assets/images/profile.jpg" class="rounded" alt="" />
+                    <picture>
+                        <source srcset="assets/images/profile.webp" type="image/webp" />
+                        <source srcset="assets/images/profile.jpg" type="image/jpeg" />
+                        <img src="assets/images/profile.jpg" class="rounded" alt="" />
+                    </picture>
+
                     <!-- <img src="http://placehold.it/348x456" alt="" />
                 <img src="http://placehold.it/348x456" alt="" /> -->
                 </div>
