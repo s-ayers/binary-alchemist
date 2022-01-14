@@ -2,7 +2,14 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ContactComponent } from './contact.component';
 import { SocialMediaComponent } from '../components/social-media/social-media.component';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -10,8 +17,8 @@ describe('ContactComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactComponent, SocialMediaComponent],
-      providers: [MalihuScrollbarService]
+      declarations: [ContactComponent, SocialMediaComponent, MockScrollbarComponent],
+      providers: []
     }).compileComponents();
   }));
 

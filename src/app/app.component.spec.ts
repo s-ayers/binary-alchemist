@@ -1,10 +1,18 @@
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
+import { Component } from '@angular/core';
+
+
+@Component({
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
 
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
@@ -14,9 +22,10 @@ describe('AppComponent', () => {
         AppComponent,
         HeaderComponent,
         MenuComponent,
-        SocialMediaComponent
+        SocialMediaComponent,
+        MockScrollbarComponent
       ],
-      providers: [MalihuScrollbarService]
+      providers: []
     }).compileComponents();
   }));
 

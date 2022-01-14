@@ -1,10 +1,17 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { EscapeHtmlPipe } from '../pipes/keep-html.pipe';
 
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { PortfolioComponent } from './portfolio.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
 import { Projects } from '../components/projects/projects.data';
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
 
 describe('PortfolioComponent', () => {
   let component: PortfolioComponent;
@@ -12,8 +19,8 @@ describe('PortfolioComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [PortfolioComponent, ProjectsComponent, EscapeHtmlPipe],
-      providers: [MalihuScrollbarService]
+      declarations: [PortfolioComponent, ProjectsComponent, EscapeHtmlPipe, MockScrollbarComponent],
+      providers: []
     }).compileComponents();
   }));
 

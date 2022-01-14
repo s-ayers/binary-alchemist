@@ -12,12 +12,40 @@
 }
 
 @media only screen and (max-width: 800px) {
-.resp-vtabs .resp-tabs-container {
+  .resp-vtabs .resp-tabs-container {
     border: none;
     float: none;
     width: 100%;
     min-height: initial;
     clear: none;
     height: 100%;
+  }
 }
+
+::ng-deep .scrollbar {
+  --scrollbar-viewport-margin-right: 15px;
+  --scrollbar-viewport-padding: 15px;
+  padding: 15px;
+  --scrollbar-size: 15px;
+}
+
+::ng-deep .github-fork-ribbon:before {
+  background-color: var(--primary-color);
+}
+
+::ng-deep .ng-scrollbar-track {
+  border-radius: unset !important;
+}
+::ng-deep .ng-scrollbar-thumb {
+  --scrollbar-thumb-color: var(--secondary-color);
+  --scrollbar-thumb-hover-color: var(--primary-color);
+  border-radius: unset !important;
+  /* margin-bottom: 60px; */
+}
+::ng-deep .ng-scrollbar-wrapper {
+  height: 580px;
+}
+
+::ng-deep {
+  --scrollbar-border-radius: 0;
 }

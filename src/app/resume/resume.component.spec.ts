@@ -6,7 +6,17 @@ import { EducationComponent } from '../components/education/education.component'
 import { AwardsComponent } from '../components/awards/awards.component';
 import { ReferenceComponent } from '../components/reference/reference.component';
 import { EscapeHtmlPipe } from '../pipes/keep-html.pipe';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+import { SkillsComponent } from '../skills/skills.component';
+import { Component } from '@angular/core';
+
+
+@Component({
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
+
 
 describe('ResumeComponent', () => {
   let component: ResumeComponent;
@@ -20,9 +30,13 @@ describe('ResumeComponent', () => {
         EducationComponent,
         AwardsComponent,
         ReferenceComponent,
+        SkillsComponent,
+        MockScrollbarComponent,
+        ReferenceComponent,
+        AwardsComponent,
         EscapeHtmlPipe
       ],
-      providers: [MalihuScrollbarService]
+      providers: [],
     }).compileComponents();
   }));
 

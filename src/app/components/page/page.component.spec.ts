@@ -1,7 +1,15 @@
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import jQuery from 'jquery';
 import { PageComponent } from './page.component';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
+
+
+@Component({
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
 
 describe('PageComponent', () => {
   let component: PageComponent;
@@ -9,9 +17,9 @@ describe('PageComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [PageComponent],
-      // imports: [MalihuScrollbarService]
-      providers: [MalihuScrollbarService]
+      declarations: [PageComponent, MockScrollbarComponent],
+      imports: [],
+      providers: []
     }).compileComponents();
   }));
 

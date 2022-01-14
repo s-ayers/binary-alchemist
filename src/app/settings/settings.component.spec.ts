@@ -1,8 +1,14 @@
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SettingsComponent } from './settings.component';
-import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 
+@Component({
+  selector: 'ng-scrollbar',
+  template: ''
+})
+class MockScrollbarComponent {
+}
 
 describe('SettingsComponent', () => {
   let component: SettingsComponent;
@@ -10,8 +16,8 @@ describe('SettingsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SettingsComponent ],
-      providers: [MalihuScrollbarService]
+      declarations: [ SettingsComponent, MockScrollbarComponent ],
+      providers: [],
     })
     .compileComponents();
   });

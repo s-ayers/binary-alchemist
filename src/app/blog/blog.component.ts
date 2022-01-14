@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
-// import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
 import { MenuService } from '../services/menu.service';
 

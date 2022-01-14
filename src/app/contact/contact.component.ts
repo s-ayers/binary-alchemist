@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
 import { person } from '../app';
-// import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
 import { MenuService } from '../services/menu.service';
 
@@ -9,7 +8,7 @@ import { MenuService } from '../services/menu.service';
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
-  // providers: [MalihuScrollbarService]
+  providers: []
 })
 export class ContactComponent extends PageComponent {
   routestring = '/contact';

@@ -1,5 +1,4 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
-// import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import { Location } from '@angular/common';
 import { MenuService } from 'src/app/services/menu.service';
 
@@ -55,10 +54,10 @@ export class PageComponent implements AfterViewInit, OnDestroy {
     //     autoScrollOnFocus: false
     //   }
     // });
-    if (window.innerWidth <= 800) {
-      $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 10 }, 600);
+    // if (window.innerWidth <= 800) {
+    //   $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 10 }, 600);
 
-    }
+    // }
   }
   ngOnDestroy() {
     // this.mScrollbarService.destroy('.content_2');

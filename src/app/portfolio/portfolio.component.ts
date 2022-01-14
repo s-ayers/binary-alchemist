@@ -1,5 +1,4 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
-// import { MalihuScrollbarService } from 'ngx-malihu-scrollbar';
 import mixitup from 'mixitup';
 
 import { PageComponent } from '../components/page/page.component';
@@ -12,7 +11,7 @@ import { MenuService } from '../services/menu.service';
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
-  // providers: [MalihuScrollbarService]
+  providers: []
 })
 export class PortfolioComponent extends PageComponent implements AfterViewInit, OnInit {
   routestring = '/portfolio';
