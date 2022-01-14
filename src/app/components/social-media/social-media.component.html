@@ -1,5 +1,5 @@
 <div class="inner-social-div">
-    <a *ngFor="let entry of sites | keyvalue" href="{{entry.value}}" target="_blank">
+    <a *ngFor="let entry of sites | keyvalue" href="{{entry.value}}" target="_blank" rel="noopener">
         <i class="fa fa-{{entry.key}}"></i>
     </a>
 </div>
