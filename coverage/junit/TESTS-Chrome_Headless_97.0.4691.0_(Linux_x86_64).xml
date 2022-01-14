@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 97.0.4691.0 (Linux x86_64)" package="" timestamp="2022-01-14T05:07:08" id="0" hostname="fv-az202-796" tests="23" errors="0" failures="0" time="0.473">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/97.0.4691.0 Safari/537.36"/>
+  </properties>
+  <testcase name="ResumeComponent should create" time="0.123" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ResumeComponent"/>
+  <testcase name="HomeComponent should create" time="0.066" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).HomeComponent"/>
+  <testcase name="MenuComponent should create" time="0.014" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).MenuComponent"/>
+  <testcase name="PortfolioComponent should create" time="0.017" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).PortfolioComponent"/>
+  <testcase name="SocialMediaComponent should create" time="0.01" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SocialMediaComponent"/>
+  <testcase name="ProjectsComponent should create" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ProjectsComponent"/>
+  <testcase name="ThemingService should be created" time="0.001" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ThemingService"/>
+  <testcase name="TestsComponent should create" time="0.007" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).TestsComponent"/>
+  <testcase name="SkillsComponent should create" time="0.068" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SkillsComponent"/>
+  <testcase name="ProfileComponent should create" time="0.007" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ProfileComponent"/>
+  <testcase name="SettingsComponent should create" time="0.005" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SettingsComponent"/>
+  <testcase name="BlogComponent should create" time="0.082" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).BlogComponent"/>
+  <testcase name="MenuService should be created" time="0.001" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).MenuService"/>
+  <testcase name="AppComponent should have as title 'Binary Alchemist'" time="0.011" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.013" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="ContactComponent should create" time="0.014" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ContactComponent"/>
+  <testcase name="EducationComponent should create" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).EducationComponent"/>
+  <testcase name="AwardsComponent should create" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AwardsComponent"/>
+  <testcase name="HeaderComponent should create" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).HeaderComponent"/>
+  <testcase name="ReferenceComponent should create" time="0.003" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ReferenceComponent"/>
+  <testcase name="ExperienceComponent should create" time="0.006" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ExperienceComponent"/>
+  <testcase name="PageComponent should create" time="0.005" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).PageComponent"/>
+  <system-out>
+    <![CDATA[Chrome Headless 97.0.4691.0 (Linux x86_64) ERROR: 'NG0304: 'app-tests' is not a known element:
+1. If 'app-tests' is an Angular component, then verify that it is part of this module.
+2. If 'app-tests' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
