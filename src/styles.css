@@ -1830,9 +1830,6 @@ a.readmore {
   float: right;
 }
 
-a.readmore:hover, a.readmore:focus, a.readmore:active {
-  text-decoration: none;
-}
 
 a.readmore.disabled {
   cursor: default;
@@ -1851,15 +1848,6 @@ a.readmore:visited, a.readmore {
   margin-bottom: 10px
 }
 
-a.readmore:hover, a.readmore:focus, a.readmore:active {
-  color: #FFF;
-  transition-property: border;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-  transition-property: background-color;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-}
 
 ul.info-post li:first-child {
   margin-left: 0px;
@@ -1989,10 +1977,6 @@ ul.info-post li {
   padding: 10px 15px;
 }
 
-#categories_sidebar ul.categories li a:hover {
-  color: #FFF;
-  text-decoration: none;
-}
 
 #categories_sidebar ul.categories li a i {
   display: inline-block;
@@ -2002,10 +1986,6 @@ ul.info-post li {
   font-size: 11px;
   float: right;
   margin-top: 7px;
-}
-
-#categories_sidebar ul.categories li a:hover i {
-  color: #FFF;
 }
 
 #tabs_sidebar .nav>li>a {

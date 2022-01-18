@@ -15,29 +15,14 @@
 }
 
 
-a.readmore:hover,
-a.readmore:focus,
-a.readmore:active {
-  border: 1px solid #3b5998;
-  background-color: #3b5998;
-}
-
-a.readmore:hover,
-a.readmore:focus,
-a.readmore:active {
-  border: 1px solid #3b5998;
-  background-color: #3b5998;
-}
-
-
 .download:hover span,
 .download:focus span {
-  background: #3b5998;
+  background: var(--primary-color);
 }
 
 .download span,
 .ch-info .ch-info-back {
-  background: #3b5998;
+  background: var(--primary-color);
 }
 
 .resp-tabs-container h1 {
@@ -47,17 +32,13 @@ a.readmore:active {
 
 #contactform .submit,
 #comment_form .submit {
-  background-color: #3b5998;
+  background-color: var(--primary-color);
 }
 
-#section-title,
-#categories_sidebar ul.categories li a:hover {
-  background: #3b5998;
-}
 
 h2.resp-accordion:hover .hi-icon,
 .no-touch .hi-icon-effect-5 .hi-icon:hover {
-  border: 1px solid #3b5998 !important;
+  border: 1px solid var(--primary-color) !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -66,14 +47,14 @@ h2.resp-accordion:hover .hi-icon,
   .icon_menu_hover,
   .resp-tab-item:hover .icon_menu {
     /* background: #fff !important; */
-    /* color: #3b5998 !important; */
+    /* color: var(--primary-color) !important; */
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: linear;
   }
 
   h2.resp-accordion {
-    background: #3b5998 !important;
+    background: var(--primary-color) !important;
   }
 
   h2.resp-accordion:hover {
@@ -87,12 +68,12 @@ h2.resp-accordion:hover .hi-icon,
 
 .title_content:after,
 .icon_content {
-  background: #3b5998;
+  background: var(--primary-color);
 }
 
 .panel-default>.panel-heading {
   color: #fff;
-  background-color: #3b5998;
+  background-color: var(--primary-color);
 }
 
 .skillbar-title,
@@ -102,12 +83,12 @@ h2.resp-accordion:hover .hi-icon,
 
 .portfolio .label-bg,
 #filters li span.active {
-  background: #3b5998;
+  background: var(--primary-color);
 }
 
 .portfolio .label-bg,
 #filters li span:hover {
-  background: #3b5998;
+  background: var(--primary-color);
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
@@ -116,10 +97,10 @@ h2.resp-accordion:hover .hi-icon,
 
 #sidebar-right .search-blog i,
 #sidebar-left .search-blog i {
-  background: #3b5998;
+  background: var(--primary-color);
 }
 
 
 #blog .post_media .post-format-icon {
-  background: #3b5998;
+  background: var(--primary-color);
 }
