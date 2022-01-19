@@ -14,12 +14,6 @@
 
 
 
-#section-title,
-#categories_sidebar ul.categories li a:hover {
-    background: #0087F7;
-}
-
-
 @media only screen and (max-width: 800px) {
     .icon_menu_active, ul.menu-primary>li:hover i, ul.menu-primary>li i:hover {
         background: #fff !important;
