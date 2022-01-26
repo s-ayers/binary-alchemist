@@ -14,7 +14,11 @@ jobs:
       run: |
         npm install
         npm run test
-    - name: All things angular
+    - uses: codecov/codecov-action@v2
+      # with:
+        # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+        # files: ./coverage1.xml,./coverage2.xml #
+    - name: build and release
       uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2 ## replace by latest version without it you will see Expected format {org}/{repo}[/path]@ref. Actual 'AhsanAyaz/angular-deploy-gh-pages-actions',Input string was not in a correct format.
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }} # see the Configuration section for how you can create secrets
