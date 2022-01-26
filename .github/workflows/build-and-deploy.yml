@@ -15,7 +15,7 @@ jobs:
         npm install
         npm run test
     - uses: codecov/codecov-action@v2
-      # with:
+      with:
         token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
         directory: ./src/coverage/junit/ #
     - name: build and release
