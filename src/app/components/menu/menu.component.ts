@@ -26,7 +26,7 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  active(path: string, tag: string = 'i') {
+  active(path: string, tag = 'i') {
     if (this.url === path || (this.url === '/' && path === '/profile')) {
       if (tag !== 'li') {
         return ' icon_menu_active';
