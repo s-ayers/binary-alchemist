@@ -11,7 +11,7 @@ export class ExperienceComponent implements OnInit {
   years: number;
   constructor() {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.experience = person.experience;
 
     let first = (new Date()).getFullYear();

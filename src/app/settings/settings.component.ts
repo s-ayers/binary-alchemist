@@ -27,7 +27,7 @@ export class SettingsComponent extends PageComponent implements OnInit {
     this.themes = this.themeService.themes;
   }
 
-  public setTheme(theme: string) {
+  public setTheme(theme: string): void {
     this.themeService.Set(theme);
     this.themeService.Load(theme);
   }

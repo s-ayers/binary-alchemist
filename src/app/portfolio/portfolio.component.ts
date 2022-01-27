@@ -1,5 +1,4 @@
-import { Component, AfterViewInit, OnInit } from '@angular/core';
-import mixitup from 'mixitup';
+import { Component } from '@angular/core';
 
 import { PageComponent } from '../components/page/page.component';
 import { Project } from '../components/projects/project.model';
@@ -13,7 +12,7 @@ import { MenuService } from '../services/menu.service';
   styleUrls: ['./portfolio.component.css'],
   providers: []
 })
-export class PortfolioComponent extends PageComponent implements AfterViewInit, OnInit {
+export class PortfolioComponent extends PageComponent {
   routestring = '/portfolio';
   categories: string[] = [];
   projects: Project[] = Projects;
@@ -29,12 +28,4 @@ export class PortfolioComponent extends PageComponent implements AfterViewInit, 
     this.categories.sort();
   }
 
-  ngOnInit() {
-
-  }
-
-  ngAfterViewInit() {
-    super.ngAfterViewInit();
-
-  }
 }

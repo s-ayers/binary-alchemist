@@ -20,13 +20,13 @@ export class MenuComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.menuService.primary$.subscribe(menus => {
       this.primary = menus;
     });
   }
 
-  active(path: string, tag = 'i') {
+  active(path: string, tag = 'i'): string {
     if (this.url === path || (this.url === '/' && path === '/profile')) {
       if (tag !== 'li') {
         return ' icon_menu_active';
@@ -36,11 +36,11 @@ export class MenuComponent implements OnInit {
     }
   }
 
-  isActive(routestring: string) {
+  isActive(routestring: string): boolean {
     return this.location.path() === routestring;
   }
 
-  go(routestring) {
+  go(routestring): void {
     this.router.navigateByUrl(routestring);
   }
 

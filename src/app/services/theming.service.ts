@@ -22,7 +22,7 @@ export class ThemingService {
     this.themes.push(new AlchemistThemeColor('Yellow', '', '#FDB000'));
   }
 
-  public Load(theme: string) {
+  public Load(theme: string): void {
 
     if (theme.length === 0) {
       theme = localStorage.getItem('alchemist-theme') || 'Dark Blue';
@@ -40,7 +40,7 @@ export class ThemingService {
     }, 4000);
   }
 
-  public Set(theme: string) {
+  public Set(theme: string): void {
     localStorage.setItem('alchemist-theme', theme);
   }
 }

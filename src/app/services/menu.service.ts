@@ -13,7 +13,7 @@ export class MenuService {
   items = [];
   constructor() { }
 
-  public add(route: string, icon: string, menu = 'primary') {
+  public add(route: string, icon: string, menu = 'primary'): void {
     if (menu === 'primary') {
       const prime = this.primary$.getValue();
       prime.push({ route, icon });

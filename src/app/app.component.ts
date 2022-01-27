@@ -17,11 +17,10 @@ export class AppComponent implements OnInit {
 
     menuService.add('/profile', 'fa-user');
     menuService.add('/resume', 'fa-tasks');
-    // menuService.add('/portfolio', 'fa-briefcase');
 
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.themingService.Load('');
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
@@ -34,7 +33,6 @@ export class AppComponent implements OnInit {
         $('.resp-tabs-container').removeClass('animated ' + animationStyle);
       });
     });
-
 
   }
 
