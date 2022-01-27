@@ -16,18 +16,19 @@ module.exports = function (config) {
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
-    coverageIstanbulReporter: {
-      reports: ['html', 'lcovonly', 'text-summary', 'cobertura'],
-      fixWebpackSourcePaths: true
-    },
     reporters: ['progress', 'kjhtml', 'junit'],
     junitReporter: {
       outputDir: 'src/coverage/junit'
     },
     coverageReporter: {
-      dir: 'src/coverage',
-      subdir: 'html'
-      // Would output the results into: .'/coverage/'
+      dir: require('path').join(__dirname, './src/coverage'),
+      subdir: '.',
+      reporters: [
+        { type: 'html' },
+        { type: 'text-summary' },
+        { type: 'lcovonly' },
+        { type: 'cobertura' },
+      ]
     },
     port: 9876,
     colors: true,
