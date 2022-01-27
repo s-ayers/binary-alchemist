@@ -1,5 +1,4 @@
 import { Project } from './project.model';
-declare var require: any;
 
 export const Projects: Project[] = [
   {
