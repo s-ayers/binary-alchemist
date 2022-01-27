@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/bootstrap.min.css",
+              "node_modules/bootstrap3/dist/css/bootstrap.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
 
@@ -104,7 +104,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/bootstrap.min.css",
+              "node_modules/bootstrap3/dist/css/bootstrap.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
 
