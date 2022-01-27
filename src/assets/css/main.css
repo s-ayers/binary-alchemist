@@ -179,7 +179,6 @@ h2.resp-accordion {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     line-height: 0;
     cursor: pointer;
-    padding: 5px;
     display: none;
     font-size: 17px;
     margin: 0;
@@ -2150,9 +2149,7 @@ ul.info-post li {
 
 #blog .post_comments .comment {
     background: rgba(100, 100, 100, 0.1);
-    padding: 13px;
     margin-bottom: 15px;
-    padding: 0;
     padding: 10px;
     background-color: #f7f7f7;
     color: #999;
@@ -3230,13 +3227,10 @@ li h6 {
 
 .post-format-icon a.item-date span {
     padding-top: 7px;
-    margin-bottom: -6px;
-    font-size: 26px !important;
+    font-size: 26px;
     font-weight: bold;
-    color: #FFF !important;
     display: block;
     clear: both;
-    font-size: 12px;
     margin-bottom: -8px;
     color: #FFF !important;
     -webkit-transform: rotate(45deg);
