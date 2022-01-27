@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ExperienceComponent } from './experience.component';
 import { EscapeHtmlPipe } from '../../pipes/keep-html.pipe';
-import { from } from 'rxjs';
 
 describe('ExperienceComponent', () => {
   let component: ExperienceComponent;

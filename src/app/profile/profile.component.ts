@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
 import { person } from '../app';
 import { Location } from '@angular/common';

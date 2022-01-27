@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { EscapeHtmlPipe } from '../../pipes/keep-html.pipe';
 
 import { ProjectsComponent } from './projects.component';
-import { Project } from './project.model';
 import { Projects } from './projects.data';
 
 describe('ProjectsComponent', () => {
