@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     overflow: hidden;
     position: absolute;
     top: 50%;
-    margin: -290.5px auto 0 auto;
+    margin: -290.5px auto 0;
 }
 
 h1 {
@@ -666,7 +666,7 @@ h2.resp-accordion:hover {
     font-size: 17px;
     padding: 8px;
     border-bottom: 1px solid #eee;
-    margin: 15px 15px 0 15px;
+    margin: 15px 15px 0;
 }
 
 #portfolio .view p {
@@ -674,7 +674,7 @@ h2.resp-accordion:hover {
     font-size: 12px;
     position: relative;
     color: #fff !important;
-    padding: 8px 20px 8px;
+    padding: 8px 20px;
     text-align: center;
 }
 
@@ -1090,7 +1090,7 @@ ul.about {
 
 /** style profile 3 **/
 .ch-grid-prof {
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
     padding: 0;
     list-style: none;
     display: block;
@@ -1146,7 +1146,7 @@ ul.about {
     letter-spacing: 2px;
     font-size: 25px;
     margin: 0 auto;
-    padding: 50px 0 0 0;
+    padding: 50px 0 0;
     text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
     line-height: 22px;
     border: none;
@@ -1761,7 +1761,6 @@ ul.about {
     position: relative;
     float: left;
     margin-top: 28px;
-    padding-right: 15px;
     display: inline-block;
     width: 200px;
     padding: 5px 2px;
@@ -1856,14 +1855,14 @@ ul.about {
 .tag {
     background: #DDDDDD;
     color: #000000;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 10px;
     padding: 3px 6px;
     display: inline-block;
 }
 
 a.readmore {
     margin: 0 0 0 5px;
-    padding: 7px 10px 8px 10px;
+    padding: 7px 10px 8px;
     font-size: 0.9em;
     float: right;
 }
@@ -1882,7 +1881,6 @@ a.readmore:visited, a.readmore {
     text-decoration: none;
     font-size: 15px;
     text-align: center;
-    border: 1px solid #dadada;
     margin-bottom: 10px
 }
 a.readmore:hover, a.readmore:focus, a.readmore:active {
@@ -1932,14 +1930,12 @@ ul.info-post li {
 }
 
 #sidebar-right .search-blog input, #sidebar-left .search-blog input {
-    padding-right: 25px;
+
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 8px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 0 5px;
     color: #585858;
     border: 1px solid #dedede;
     background: #fafafa;
@@ -1968,8 +1964,8 @@ ul.info-post li {
 }
 
 #section-title {
-    margin: 0 0 15px 0;
-    padding: 5px 0 8px 0;
+    margin: 0 0 15px;
+    padding: 5px 0 8px;
     font-size: 18px;
     text-transform: uppercase;
     height: 42px;
@@ -2075,7 +2071,6 @@ ul.info-post li {
 #tabs_sidebar .tab-content ul li img {
     width: 50px;
     height: 40px;
-    ;
 }
 
 #tabs_sidebar .img-thumbnail {
@@ -3180,7 +3175,7 @@ li h6 {
 }
 
 #services .alpha {
-    margin: 1% 0 0 0;
+    margin: 1% 0 0;
 }
 
 #services .service-icon {
@@ -3215,7 +3210,7 @@ li h6 {
 #services .service-detail h6 {
     text-transform: uppercase;
     font-weight: 400;
-    margin: 10px 0 3px 0;
+    margin: 10px 0 3px;
     text-align: center;
     font-size: 15px !important;
 }
