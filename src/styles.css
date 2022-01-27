@@ -185,7 +185,7 @@ h2.resp-accordion {
   cursor: pointer;
   background: #303030;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  line-height: 0px;
+  line-height: 0;
   cursor: pointer;
   padding: 5px;
   display: none;
@@ -534,7 +534,7 @@ h2.resp-accordion:hover {
 
 .contact-info ul {
   float: left;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .contact-info ul li {
@@ -1034,12 +1034,12 @@ h2.resp-accordion:hover {
 }
 
 .bottom-p .panel-group .panel {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .bottom-p .panel-heading {
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 ul.about li span.value {
@@ -1227,7 +1227,7 @@ ul.about {
 .widget-profil h4 {
   text-align: center;
   font-size: 15px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .widget-profil h5 {
@@ -1243,7 +1243,7 @@ ul.about {
 }
 
 .widget-profil p {
-  border-left: 0px;
+  border-left: 0;
 }
 
 .widget-profil #profile_desc blockquote {
@@ -1263,7 +1263,7 @@ ul.about {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  margin: 0px 0px 0px 5px;
+  margin: 0 0 0 5px;
   padding: 0;
   border-width: 1px;
   border-style: solid;
@@ -1850,7 +1850,7 @@ a.readmore:visited, a.readmore {
 
 
 ul.info-post li:first-child {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 ul.info-post li {
@@ -2293,7 +2293,7 @@ ul.info-post li {
   z-index: 1000;
   position: absolute;
   bottom: 10px;
-  left: 0px;
+  left: 0;
   width: 100%;
   text-align: right;
   opacity: 0;
@@ -2862,7 +2862,7 @@ ul.info-post li {
   }
 
   #blog .post_comments .comment.sub {
-    margin: 0px;
+    margin: 0;
   }
 
   #blog .post_comments .comment .text {
@@ -2897,7 +2897,7 @@ ul.info-post li {
   .blog-article .info li {
     padding-top: 7px;
     border-left: none;
-    padding-left: 0px;
+    padding-left: 0;
     float: none;
   }
 
@@ -2931,7 +2931,7 @@ ul.info-post li {
   }
 
   #blog .post_comments .comment.sub {
-    margin: 0px;
+    margin: 0;
   }
 
   #blog .post_comments .comment .text {
@@ -3090,7 +3090,7 @@ li h6 {
 
 #services .pack-service:hover {
   background: #fff;
-  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
 }
 
 #services .alpha {
@@ -3149,7 +3149,7 @@ li h6 {
   z-index: 9;
   text-align: center;
   color: #FFF;
-  margin: 11px 0 0px 0px;
+  margin: 11px 0 0 0;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
