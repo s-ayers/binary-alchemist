@@ -43,24 +43,7 @@
                 }
 
                 //Assigning the h2 markup
-                var $tabItemh2;
                 $respTabs.find('.resp-tab-content').before("<h2 class='resp-accordion hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a' role='tab'><i class='hi-icon'></i></h2>");
-
-
-
-                var itemCount = 0;
-                // $respTabs.find('.resp-accordion').each(function () {
-
-                //     $tabItemh2 = $(this);
-
-                //     $tabItemh2.find(".hi-icon").addClass(tab_icons[itemCount]);
-
-                //     var innertext = $respTabs.find('.resp-tab-item:eq(' + itemCount + ')').text();
-
-                //     $respTabs.find('.resp-accordion:eq(' + itemCount + ')').append('<span class="tite-list-resp">' + innertext + '</span>');
-                //     $tabItemh2.attr('aria-controls', 'tab_item-' + (itemCount));
-                //     itemCount++;
-                // });
 
                 //Assigning the 'aria-controls' to Tab items
                 var count = 0,
@@ -70,7 +53,7 @@
                     $tabItem.attr('aria-controls', 'tab_item-' + (count));
                     $tabItem.attr('role', 'tab');
 
-                    //First active tab                   
+                    //First active tab
                     // $respTabs.find('.resp-tab-item').first().addClass('resp-tab-active');
                     // $respTabs.find('.resp-accordion').first().addClass('resp-tab-active');
                     // $respTabs.find('.resp-tab-content').first().addClass('resp-tab-content-active').attr('style', 'display:block');
@@ -87,40 +70,9 @@
 
                 //Tab Click action function
                 $respTabs.find("[role=tab]").each(function () {
-                    var $currentTab = $(this);
-                    // $currentTab.click(function () {
 
-                    //     var $tabAria = $currentTab.attr('aria-controls');
-
-                    //     if ($currentTab.hasClass('resp-accordion') && $currentTab.hasClass('resp-tab-active')) {
-                    //         $respTabs.find('.resp-tab-content-active').slideUp('', function () {
-                    //             $(this).addClass('resp-accordion-closed');
-                    //         });
-                    //         $currentTab.removeClass('resp-tab-active');
-                    //         return false;
-                    //     }
-                    //     if (!$currentTab.hasClass('resp-tab-active') && $currentTab.hasClass('resp-accordion')) {
-                    //         $respTabs.find('.resp-tab-active').removeClass('resp-tab-active');
-                    //         $respTabs.find('.resp-tab-content-active').slideUp().removeClass('resp-tab-content-active resp-accordion-closed');
-                    //         $respTabs.find("[aria-controls=" + $tabAria + "]").addClass('resp-tab-active');
-
-                    //         $respTabs.find('.resp-tab-content[aria-labelledby = ' + $tabAria + ']').slideDown().addClass('resp-tab-content-active');
-                    //     } else {
-                    //         $respTabs.find('.resp-tab-active').removeClass('resp-tab-active');
-                    //         $respTabs.find('.resp-tab-content-active').removeAttr('style').removeClass('resp-tab-content-active').removeClass('resp-accordion-closed');
-                    //         $respTabs.find("[aria-controls=" + $tabAria + "]").addClass('resp-tab-active');
-                    //         $respTabs.find('.resp-tab-content[aria-labelledby = ' + $tabAria + ']').addClass('resp-tab-content-active').attr('style', 'display:block');
-                    //     }
-                    // });
-
-
-                    //Window resize function                   
-                    // $(window).resize(function () {
-                    //     $respTabs.find('.resp-accordion-closed').removeAttr('style');
-                    // });
                 });
             });
         }
     });
 })(jQuery);
-
