@@ -1,7 +1,9 @@
 # BinaryAlchemist.com
 ![build workflow](https://github.com/s-ayers/binary-alchemist/actions/workflows/build-and-deploy.yml/badge.svg)
+[![DeepSource](https://deepsource.io/gh/s-ayers/binary-alchemist.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/s-ayers/binary-alchemist/?ref=repository-badge)
 [![CodeFactor](https://www.codefactor.io/repository/github/s-ayers/binary-alchemist/badge)](https://www.codefactor.io/repository/github/s-ayers/binary-alchemist)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c8f909e1ec674d1f8614b61c8da7a3bd)](https://www.codacy.com/gh/s-ayers/binary-alchemist/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=s-ayers/binary-alchemist&amp;utm_campaign=Badge_Grade)
+
 
 ## Development server
 
