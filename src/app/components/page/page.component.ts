@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { MenuService } from 'src/app/services/menu.service';
 
@@ -10,18 +10,18 @@ declare var $: any;
   styleUrls: ['./page.component.css'],
   providers: [MenuService]
 })
-export class PageComponent implements AfterViewInit, OnDestroy {
+export class PageComponent  {
   routestring: string;
   collapsed = false;
   constructor(protected location: Location, protected menuService: MenuService) {
 
   }
 
-  isActive() {
+  isActive(): boolean {
     return this.location.path() === this.routestring;
   }
 
-  toggle() {
+  toggle(): void {
 
     if (!this.isActive()) {
       this.collapsed = false;
@@ -40,26 +40,8 @@ export class PageComponent implements AfterViewInit, OnDestroy {
     }
   }
 
-  go() {
+  go(): void {
     this.location.go(this.routestring);
   }
 
-  ngAfterViewInit() {
-    // this.mScrollbarService.initScrollbar('.content_2', {
-    //   theme: 'dark-2',
-    //   contentTouchScroll: true,
-    //   advanced: {
-    //     updateOnContentResize: true,
-    //     updateOnBrowserResize: true,
-    //     autoScrollOnFocus: false
-    //   }
-    // });
-    // if (window.innerWidth <= 800) {
-    //   $('html, body').animate({ scrollTop: $('h2.resp-accordion').offset().top - 10 }, 600);
-
-    // }
-  }
-  ngOnDestroy() {
-    // this.mScrollbarService.destroy('.content_2');
-  }
 }

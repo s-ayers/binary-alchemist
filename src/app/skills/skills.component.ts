@@ -9,7 +9,7 @@ export class SkillsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
 
     $('.skillbar').each(function() {
       $(this).find('.skillbar-bar').width(0);

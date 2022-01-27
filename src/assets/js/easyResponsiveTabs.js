@@ -14,9 +14,6 @@
             var opt = options, jtype = opt.type, jfit = opt.fit, jwidth = opt.width, vtabs = 'vertical', accord = 'accordion';
 
             //Main function
-
-            var tab_icons = new Array("fa fa-user icon_menu icon_menu_active", "fa fa-tasks icon_menu", "fa fa-briefcase icon_menu", "fa fa-bullhorn icon_menu", "fa fa-envelope icon_menu");
-            var i = 1;
             this.each(function () {
 
                 var $respTabs = $(this);

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { person } from '../../app';
 
 @Component({
@@ -6,9 +6,6 @@ import { person } from '../../app';
   templateUrl: './social-media.component.html',
   styleUrls: ['./social-media.component.css']
 })
-export class SocialMediaComponent implements OnInit {
+export class SocialMediaComponent {
   public sites: any = person['social media'];
-  constructor() {}
-
-  ngOnInit() {}
 }

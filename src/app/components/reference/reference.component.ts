@@ -1,19 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { person } from '../../app';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-reference',
   templateUrl: './reference.component.html',
   styleUrls: ['./reference.component.css']
 })
-export class ReferenceComponent implements OnInit {
+export class ReferenceComponent {
   references: any;
-  constructor() {
-    // const perObj = person as object;
-    // if (perObj.hasOwnProperty('references')) {
-    //   this.references = person['references'];
-    // }
-  }
 
-  ngOnInit() {}
 }
