@@ -61,6 +61,11 @@ label {
 
 .clear {
   clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 ul, li, nav {
@@ -193,15 +198,11 @@ h2.resp-accordion {
 
 .resp-tab-content {
   display: none;
+  border: 1px solid #ccc;
 }
-
 .resp-tab-active {
-  border-bottom: none;
   margin-bottom: -1px !important;
   padding: 12px 14px 14px !important;
-}
-
-.resp-tab-active {
   border-bottom: none;
   background-color: #fff;
 }
@@ -210,9 +211,7 @@ h2.resp-accordion {
   display: block;
 }
 
-.resp-tab-content {
-  border: 1px solid #ccc;
-}
+
 
 h2.resp-accordion {
   font-size: 17px;
@@ -264,13 +263,14 @@ h2.resp-tab-title:last-child {
 .resp-vtabs .resp-tabs-container {
   padding: 0;
   background-color: #f4f4f4;
-  float: left;
-  width: 88%;
   height: 580px;
-  clear: none;
   margin-left: 13px;
+  border: none;
+  float: none;
+  width: 100%;
+  min-height: initial;
+  clear: none;
 }
-
 .resp-vtabs .resp-tab-content {
   border: none;
 }
@@ -356,13 +356,7 @@ h2.resp-accordion:first-child {
     padding: 15px;
   }
 
-  .resp-vtabs .resp-tabs-container {
-    border: none;
-    float: none;
-    width: 100%;
-    min-height: initial;
-    clear: none;
-  }
+
 
   .resp-accordion-closed {
     display: none !important;
@@ -959,14 +953,7 @@ h2.resp-accordion:hover {
   zoom: 1;
 }
 
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
+
 
 /*--------------------------------------------------
 ---------------------- Title  ---------------------
@@ -1295,9 +1282,6 @@ ul.about {
   left: 0;
   width: 150px;
   height: 150px;
-}
-
-.widget-profil .head-image {
   z-index: 0;
 }
 
@@ -1436,18 +1420,17 @@ ul.about {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
   font-size: 1.35em;
   text-align: center;
+  line-height: 2em;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
 }
 
 .download:hover, .download:focus {
   outline: none;
 }
 
-.download {
-  line-height: 2em;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  perspective: 800px;
-}
+
 
 .download span {
   position: relative;
@@ -1790,9 +1773,6 @@ ul.about {
   margin-bottom: 15px;
   margin-left: 0;
   cursor: default;
-}
-
-.postPage .postImg {
   max-width: 100%;
 }
 
@@ -1930,13 +1910,7 @@ ul.info-post li {
   padding-left: 15px;
 }
 
-#categories_sidebar ul.categories {
-  list-style: none;
-  margin: 0;
-  padding: 0 !important;
-  border: 1px solid #e0eded;
-  overflow: hidden;
-}
+
 
 #categories_sidebar ul.categories li {
   border-bottom: 1px solid #e0eded;
@@ -1961,19 +1935,13 @@ ul.info-post li {
   overflow: hidden;
 }
 
-#categories_sidebar ul.categories li {
-  border-bottom: 1px solid #e0eded;
-  position: relative;
-}
+
 
 #categories_sidebar ul.categories li:last-child {
   border: 0;
 }
 
-#categories_sidebar ul.categories li a {
-  display: block;
-  padding: 10px 15px;
-}
+
 
 
 #categories_sidebar ul.categories li a i {
@@ -2130,12 +2098,7 @@ ul.info-post li {
 
 #blog .post_comments .comment {
   background: rgba(100, 100, 100, 0.1);
-  padding: 13px;
   margin-bottom: 15px;
-}
-
-#blog .post_comments .comment {
-  padding: 0;
   padding: 10px;
   background-color: #f7f7f7;
   color: #999;
@@ -2989,27 +2952,24 @@ select {
 .dropdown-select {
   position: relative;
   width: 200px;
-  margin: 0;
   padding: 6px 20px;
   height: 30px;
   line-height: 14px;
   font-size: 12px;
-  color: #fff;
   /* Fallback for IE 8 */
-  background: #3C3E40;
   border: 0;
   border-radius: 0;
   margin-top: 10px;
   margin-left: 12px;
-  /* &:focus { */
   z-index: 3;
   width: 100%;
-  color: #394349;
   outline: 2px solid #49aff2;
   outline: 2px solid -webkit-focus-ring-color;
   outline-offset: -2px;
+  color: #aaa;
+  text-shadow: 0 1px black;
+  background: #444;
 }
-
 /*
 > option {
   margin: 3px;
@@ -3048,19 +3008,7 @@ select {
 /* &:before { border-bottom-color: #aaa; }
 &:after { border-top-color: #aaa; } */
 
-.dropdown-select {
-  color: #aaa;
-  text-shadow: 0 1px black;
-  /* Fallback for IE 8 */
-  background: #444;
-  /* &:focus { color: #ccc; }
 
-> option {
-  background: #444;
-  text-shadow: 0 1px rgba(black, .4);
-}
-} */
-}
 
 li h6 {
   font-size: 13px;
@@ -3186,16 +3134,10 @@ li h6 {
 
 .post-format-icon a.item-date span {
   padding-top: 7px;
-  margin-bottom: -6px;
-  font-size: 26px !important;
+  font-size: 26px;
   font-weight: bold;
-  color: #FFF !important;
-}
-
-.post-format-icon a.item-date span {
   display: block;
   clear: both;
-  font-size: 12px;
   margin-bottom: -8px;
   color: #FFF !important;
   -webkit-transform: rotate(45deg);
@@ -3218,6 +3160,7 @@ li h6 {
   float: left;
   text-align: center;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+  background: rgba(45, 57, 63, 0.8);
 }
 
 .icon_print {
@@ -3239,9 +3182,7 @@ li h6 {
   color: #fff;
 }
 
-#print, #downlowd {
-  background: rgba(45, 57, 63, 0.8);
-}
+
 
 #print:hover, #downlowd:hover {
   background: rgba(45, 57, 63, 1);
