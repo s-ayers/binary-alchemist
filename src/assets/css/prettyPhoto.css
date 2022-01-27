@@ -534,6 +534,7 @@ div.dark_square .currentTextHolder {
 
 div.dark_square .pp_description {
 	color: #fff;
+	margin: 0 85px 0 0;
 }
 
 div.dark_square .pp_loaderIcon {
@@ -576,10 +577,6 @@ div.dark_square .pp_close {
 /* Close button */
 div.dark_square .pp_details {
 	position: relative;
-}
-
-div.dark_square .pp_description {
-	margin: 0 85px 0 0;
 }
 
 div.dark_square #pp_full_res .pp_inline {
