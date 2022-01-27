@@ -23,7 +23,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { SettingsComponent } from './settings/settings.component';
-import { ThemingService } from './services/theming.service';
 import { TestsComponent } from './tests/tests.component';
 
 @NgModule({
@@ -48,6 +47,7 @@ import { TestsComponent } from './tests/tests.component';
     SkillsComponent,
     SocialMediaComponent,
     TestsComponent,
+
   ],
   imports: [
     BrowserModule,
