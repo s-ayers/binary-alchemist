@@ -11,7 +11,6 @@ export class MenuService {
   public secondary$ = new BehaviorSubject([]);
 
   items = [];
-  constructor() { }
 
   public add(route: string, icon: string, menu = 'primary'): void {
     if (menu === 'primary') {
