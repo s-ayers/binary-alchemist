@@ -9,7 +9,6 @@ import  { person } from '../../app';
 export class ExperienceComponent implements OnInit {
   experience: any[];
   years: number;
-  constructor() {}
 
   ngOnInit(): void {
     this.experience = person.experience;

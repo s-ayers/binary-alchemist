@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { PageComponent } from '../components/page/page.component';
 import { person } from '../app';
-import { Location } from '@angular/common';
-import { MenuService } from '../services/menu.service';
-
 
 @Component({
   selector: 'app-profile',
@@ -17,8 +14,4 @@ export class ProfileComponent extends PageComponent {
   public website: string = person.website;
   routestring = '/profile';
 
-  constructor(location: Location, menuService: MenuService) {
-    super(location, menuService);
-
-  }
 }
