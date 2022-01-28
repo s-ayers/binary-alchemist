@@ -5,7 +5,7 @@ import { SocialMediaComponent } from '../components/social-media/social-media.co
 import { Component } from '@angular/core';
 
 @Component({
-    // tslint:disable-next-line:component-selector
+    // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'ng-scrollbar',
   template: ''
 })

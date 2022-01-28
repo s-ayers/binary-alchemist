@@ -4,7 +4,7 @@ import { ProfileComponent } from './profile.component';
 import { Component } from '@angular/core';
 
 @Component({
-    // tslint:disable-next-line:component-selector
+    // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'ng-scrollbar',
   template: ''
 })
