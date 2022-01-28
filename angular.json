@@ -31,7 +31,6 @@
               "node_modules/bootstrap3/dist/css/bootstrap.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
-
               "src/assets/css/main.css",
               "src/assets/themes/dark-blue.css",
               "src/assets/css/prettyPhoto.css",
@@ -106,7 +105,6 @@
               "node_modules/bootstrap3/dist/css/bootstrap.css",
               "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/css/animate.min.css",
-
               "src/assets/css/main.css",
               "node_modules/github-fork-ribbon-css/gh-fork-ribbon.css"
             ],
@@ -115,20 +113,17 @@
               "node_modules/jquery.cycle2/src/jquery.cycle2.min.js",
               "node_modules/mixitup/dist/mixitup.min.js",
               "src/assets/js/easyResponsiveTabs.js",
-
               "src/assets/js/main.js"
             ]
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": ["**/node_modules/**"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         },
         "e2e": {
@@ -146,5 +141,8 @@
       }
     }
   },
-  "defaultProject": "BinaryAlchemist"
+  "defaultProject": "BinaryAlchemist",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
