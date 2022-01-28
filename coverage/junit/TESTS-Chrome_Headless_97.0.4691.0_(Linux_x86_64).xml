@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 97.0.4691.0 (Linux x86_64)" package="" timestamp="2022-01-28T02:44:23" id="0" hostname="fv-az99-300" tests="23" errors="0" failures="0" time="0.459">
+<testsuite name="Chrome Headless 97.0.4691.0 (Linux x86_64)" package="" timestamp="2022-01-28T03:33:37" id="0" hostname="fv-az203-876" tests="23" errors="0" failures="0" time="0.563">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/97.0.4691.0 Safari/537.36"/>
   </properties>
-  <testcase name="AwardsComponent should create" time="0.052" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AwardsComponent"/>
-  <testcase name="SocialMediaComponent should create" time="0.02" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SocialMediaComponent"/>
-  <testcase name="ResumeComponent should create" time="0.087" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ResumeComponent"/>
-  <testcase name="BlogComponent should create" time="0.1" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).BlogComponent"/>
-  <testcase name="MenuService should be created" time="0.002" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).MenuService"/>
-  <testcase name="EducationComponent should create" time="0.005" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).EducationComponent"/>
-  <testcase name="PortfolioComponent should create" time="0.018" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).PortfolioComponent"/>
-  <testcase name="ExperienceComponent should create" time="0.006" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ExperienceComponent"/>
-  <testcase name="HeaderComponent should create" time="0.011" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).HeaderComponent"/>
-  <testcase name="ProfileComponent should create" time="0.027" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ProfileComponent"/>
-  <testcase name="MenuComponent should create" time="0.012" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).MenuComponent"/>
-  <testcase name="PageComponent should create" time="0.005" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).PageComponent"/>
-  <testcase name="ProjectsComponent should create" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ProjectsComponent"/>
-  <testcase name="ThemingService should be created" time="0.002" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ThemingService"/>
-  <testcase name="SettingsComponent should create" time="0.009" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SettingsComponent"/>
-  <testcase name="TestsComponent should create" time="0.007" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).TestsComponent"/>
-  <testcase name="AppComponent should have as title 'Binary Alchemist'" time="0.011" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
-  <testcase name="AppComponent should render title in a h1 tag" time="0.01" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.005" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
-  <testcase name="ContactComponent should create" time="0.013" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ContactComponent"/>
-  <testcase name="SkillsComponent should create" time="0.026" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SkillsComponent"/>
-  <testcase name="HomeComponent should create" time="0.023" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).HomeComponent"/>
-  <testcase name="ReferenceComponent should create" time="0.004" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ReferenceComponent"/>
+  <testcase name="MenuComponent should create" time="0.071" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).MenuComponent"/>
+  <testcase name="MenuService should be created" time="0.006" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).MenuService"/>
+  <testcase name="ContactComponent should create" time="0.059" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ContactComponent"/>
+  <testcase name="PageComponent should create" time="0.018" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).PageComponent"/>
+  <testcase name="PortfolioComponent should create" time="0.038" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).PortfolioComponent"/>
+  <testcase name="ProjectsComponent should create" time="0.006" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ProjectsComponent"/>
+  <testcase name="ProfileComponent should create" time="0.039" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ProfileComponent"/>
+  <testcase name="AwardsComponent should create" time="0.009" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AwardsComponent"/>
+  <testcase name="EducationComponent should create" time="0.02" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).EducationComponent"/>
+  <testcase name="ExperienceComponent should create" time="0.014" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ExperienceComponent"/>
+  <testcase name="ReferenceComponent should create" time="0.009" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ReferenceComponent"/>
+  <testcase name="HeaderComponent should create" time="0.01" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).HeaderComponent"/>
+  <testcase name="SocialMediaComponent should create" time="0.006" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SocialMediaComponent"/>
+  <testcase name="SkillsComponent should create" time="0.042" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SkillsComponent"/>
+  <testcase name="TestsComponent should create" time="0.012" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).TestsComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.021" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent should have as title 'Binary Alchemist'" time="0.009" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.006" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).AppComponent"/>
+  <testcase name="BlogComponent should create" time="0.113" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).BlogComponent"/>
+  <testcase name="SettingsComponent should create" time="0.012" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).SettingsComponent"/>
+  <testcase name="ThemingService should be created" time="0.003" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ThemingService"/>
+  <testcase name="HomeComponent should create" time="0.025" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).HomeComponent"/>
+  <testcase name="ResumeComponent should create" time="0.015" classname="Chrome_Headless_97_0_4691_0_(Linux_x86_64).ResumeComponent"/>
   <system-out>
     <![CDATA[
 ]]>

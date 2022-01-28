@@ -2,9 +2,11 @@
 /* ===================================== lightseagreen #43B6B1 ==================================== */
 /* ========================================================================================= */
 :root {
+    /* csslint ignore:start */
     --primary-color: #43B6B1;
     --secondary-color: #b1e2df;
     --tertiary-color: #b1e2df;
+    /* csslint ignore:end */
 }
 
 
