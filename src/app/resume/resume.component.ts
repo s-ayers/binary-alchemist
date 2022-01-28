@@ -6,7 +6,6 @@ import { MenuService } from '../services/menu.service';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent extends PageComponent {
   routestring = '/resume';
