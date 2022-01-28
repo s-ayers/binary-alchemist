@@ -6,8 +6,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
-
   ngOnInit(): void {
 
     $('.skillbar').each(function() {
