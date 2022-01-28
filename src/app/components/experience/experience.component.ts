@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Experience } from 'src/app/classes/experience';
 import  { person } from '../../app';
 
 @Component({
@@ -6,11 +7,11 @@ import  { person } from '../../app';
   templateUrl: './experience.component.html',
 })
 export class ExperienceComponent implements OnInit {
-  experience: any[];
+  experience: Experience[];
   years: number;
 
   ngOnInit(): void {
-    this.experience = person.experience;
+    this.experience = person.experience as Experience[];
 
     let first = (new Date()).getFullYear();
     this.experience.forEach(element => {

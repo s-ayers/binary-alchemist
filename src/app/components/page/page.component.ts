@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { MenuService } from 'src/app/services/menu.service';
 
-declare var $: any;
+declare const $: any;
 
 @Component({
   selector: 'app-page',
