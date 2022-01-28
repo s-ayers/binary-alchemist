@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './reference.component.html',
 })
 export class ReferenceComponent {
-  references: any;
+  references: object;
 
 }
