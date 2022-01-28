@@ -23,10 +23,12 @@
 }
 
 ::ng-deep .scrollbar {
+  /* csslint ignore:start */
   --scrollbar-viewport-margin-right: 15px;
   --scrollbar-viewport-padding: 15px;
-  padding: 15px;
   --scrollbar-size: 15px;
+  /* csslint ignore:end */
+  padding: 15px;
 }
 
 ::ng-deep .github-fork-ribbon:before {
@@ -37,10 +39,11 @@
   border-radius: unset !important;
 }
 ::ng-deep .ng-scrollbar-thumb {
+  /* csslint ignore:start */
   --scrollbar-thumb-color: var(--secondary-color);
   --scrollbar-thumb-hover-color: var(--primary-color);
+  /* csslint ignore:end */
   border-radius: unset !important;
-  /* margin-bottom: 60px; */
 }
 ::ng-deep .ng-scrollbar-wrapper {
   height: 580px;

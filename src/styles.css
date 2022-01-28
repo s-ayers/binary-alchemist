@@ -3197,5 +3197,7 @@ div.ppt {
 .ng-scrollbar-track {
   width: 100%;
   height: 100%;
+  /* csslint ignore:start */
   --vertical-scrollbar-size: 15px;
+  /* csslint ignore:end */
 }
