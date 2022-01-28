@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: './awards.component.html',
 })
 export class AwardsComponent {
-  awards: any;
+  awards: object;
 }
