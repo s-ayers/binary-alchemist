@@ -7,7 +7,6 @@ declare var $: any;
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
-  styleUrls: ['./page.component.css'],
   providers: [MenuService]
 })
 export class PageComponent  {

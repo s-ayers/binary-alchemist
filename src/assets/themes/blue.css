@@ -1,14 +1,13 @@
 /* ========================================================================================= */
 /* ====================================== Blue #0087F7 ===================================== */
 /* ========================================================================================= */
+/* csslint ignore:start */
 :root {
-    /* csslint ignore:start */
     --primary-color: #0087f7;
     --secondary-color: #2b9fff;
     --tertiary-color: #78c2ff;
-    /* csslint ignore:end */
 }
-
+/* csslint ignore:end */
 
 .resp-tabs-container h1 {
     background: url(../images/arrows-h3/arrow-blue-h3.png) no-repeat 0 3px;

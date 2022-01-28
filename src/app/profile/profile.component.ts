@@ -8,8 +8,6 @@ import { MenuService } from '../services/menu.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css'],
-  providers: [],
 })
 export class ProfileComponent extends PageComponent {
   public name: string = person.name;
